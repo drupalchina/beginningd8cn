@@ -1,4 +1,4 @@
-#第六章：使用Drupal主题
+#第6章：使用Drupal主题
 
 **翻译：phpworld**
 
