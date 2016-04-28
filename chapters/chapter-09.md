@@ -133,8 +133,49 @@
 ![Mou icon](http://work.beiweng.org/d/file/drupal/chapter9/2016-04-09/6c894728dae375e535cd5fdc7d25e2f3.png)
 
 		图9-7。通过视图渲染标签
-As a quick demonstration of the power of taxonomy, tags, and views, click one of the tags that you entered and Drupal will render a list of all content tagged on your site with that term. Behind the scenes, Drupal is using Views to generate this list. But let’s take it one step further and allow users to filter content that is rendered from our All Articles view by entering a tag.
-	
+作为一个快速演示分类，标签，和视图的的能力。点击一个标签，在你网站的项目上你输入Drupal将呈现一个这个标签的内容列表。在幕后，Drupal是使用视图来生成这个列表。但是，让我们更进一步，允许用户通过输入一个标签过滤文章列表中显示的内容。
+
+通过点击页面结构上的视图链接，回到视图管理页面。找到最近的我们已开启的文章视图，点击编辑按钮。在视图显示区域点击显示所有文章按钮配置页面。通过点击添加过滤标准添加一个新的过滤标签。在"添加过滤标准"表单上的搜索框输入"标签"搜索这个标签字段。勾选这个"内容：标签(field_tags)"字段复选框。改变选项为"页面(覆盖)"以便于只在本页面显示这个过滤标准，然后点击"应用(显示所有)"按钮。
+
+接下来的步骤是选择过程，我们希望显示的接口类型，无论是一个下拉的选择列表，或自动在用户类型关键词搜索。这个下拉字段将会展示给用户有效的选项，而自动完成方法要求用户知道他们希望搜索的选项。该选项依赖于你的用户体验。出于演示的目的，选择下拉菜单，点击"应用并继续按钮"。
+
+下一步时配置过滤器，并知道它是怎么工作的。我们想要允许用户选择哪一个过滤选项，这样我们将为用户展示这个过滤器以便于他们能控制这个视图的内容显示，这样，点击勾选"显示这个过滤器给游客，允许他们改变它"选择框。设置为"过滤类型"设置为"单一过滤"，改变这个标签"选择一个或多个标签"。设置为"其中之一",这意味着我们想要用户仅选择从网站上存在的文章标签值。还要检查"多选"框，来允许访问者选择多个标签进行搜索。点击应用按钮继续这个过程(如图9-8)，然后保存这个视图所作的更改。
+![Mou icon](http://work.beiweng.org/d/file/drupal/chapter9/2016-04-09/c19ac4f61988c7923d650922af68e1ea.png)
+		
+		图9-8。配置过滤器
+		
+在主菜单上通过点击所有文章链接回到本文章页面。或在你的网站上访问这个*/最近的文章*URL。你将在你的文章列表上看到你显示的过滤器。选择一个或多个标签，然后点击应用按钮将看到一个新的过滤器方法(如图9-9)。太神奇了！你触及到视图能为你做的表面。
+
+##高级视图输出
+![Mou icon](http://work.beiweng.org/d/file/drupal/chapter9/2016-04-09/8508bb4a7ffa6b241ab5589766eb2646.png)
+		
+		图9-9。基于用户输入滤波输出
+###高级视图输出
+在视图中创建内容摘要和字段列表是最常用的用法。但是，如果你停留在那里，你可能会错过更多强大的功能。在这个区域，我会说明当我们建立Drupal网站期间遇到的常见场景。
+
+创建RSS订阅
+
+一个常用的视图是创建RSS订阅，一个RSS订阅是一种行业标准的发布内容格式。它通过应用被使用例如新闻主播、Drupal网站。而RSS订阅没有像网上主播鼎盛时期那样流行。仍然有案例使用RSS订阅意义，例如在其他网站提供订阅内容。
+
+##创建表
+让我们以最近的文章视图来为所有文章创建一个RSS订阅。首先，通过点击管理单里的管理链接回到视图页面，接着点击结构链接，最后点击在结构页面链接。找到最近的文章视图，点击编辑按钮这个视图。我们将在页面上的视图区域通过点击添加按钮创建一个显示RSS订阅。对于列表中的选项，选择订阅。接下来在输入一个订阅的将被访问的URL。在"订阅设置"区域的第二栏中，点击"不设置"链接，为了输入一个网址。出于演示的目的，我会输入一个*rss/articles*的URL，我也可以使用任何URL，但是我发现它在我的RSS订阅URL里面rss的前缀更明显要显示的URL是什么。通过点击应用来保存URL的改变。然后点击在视图表单底部点击保存按钮来更新视图。你现在有一个RSS订阅，在其他网站可以使用你网站上面的文章。访问这个URL显示这个订阅输出。(如图9-10)
+![Mou icon](http://work.beiweng.org/d/file/drupal/chapter9/2016-04-09/1e41f4934968f98c829fa76cef4ecfec.png)
+		
+		图9-10。一个视图生成RSS提要
+###创建表
+将内容渲染为列表大多数情况下很好，但是你可能遇到在格式化表格中列表内容场景，然而更具代表性的是用户更喜欢查看视图内容。出于演示的目的，回到这个文章视图编辑表单为了创建一个新的显示，将在电子表格中渲染文章字段。在视图区域点击添加按钮，选择区块显示类型。改变"显示名称"像你之前那样。这次的"文章表格"。在这个格式化区域点击"没有格式化列表"，改变表格输出显示的类型。记住在点击"应用(显示所有)"按钮之前，先改变页面顶部选项为"这个区块(覆盖)"。出现的下一个屏幕你可以设置你新的表格选项。(如图9-11)。
+![Mou icon](http://work.beiweng.org/d/file/drupal/chapter9/2016-04-09/44dd0ff357cc41ee25c3ca09b2cd0e75.png)
+
+		图9-11。表样式选项
+这种表单选项，你会想使用最常用的排序选项。现在我们的表格仅仅有一列，文章标题字段，但是我们必须完成这步之后才能添加其他字段。我们可能想有一个或多个这样的列有最终用户来排序。对于排序列，用户点击这列的标题，视图自动根据表格基础进行升序排列(如果用户在次点击，将为降序排列)。点击排序表格的复选框标题这列，在接下来的几个步骤中会添加别的列后我们将回到这种表单。
+
+在下面的列表字段你会找到一个名称为"分组字段NR.1"的选择列表。在表格中你可以渲染输出这个组，就像在你表格中不同的部分，可以通过简单的选择你想要排序的分组结果的字段。例如，如果你有一个出售属性列表，你可以通过邮政编码或城市分组输出。共享一个邮政编码的所有属性将在表中单独的分离出来。出于演示的目的，设置选项为无。
+
+##查看附加模块
+这里有额外的样式选项。但是在大多数情况下设置这些选项为默认值足够了。点击应用按钮完成这个这一步。
+A table with a single column is pretty boring, really nothing more than just a list. So to spice up the table let’s add two additional fields, one for the date that the article was created, and another for the tags associated with the article. We’ll add each field as a separate column. To add the fields, click the Add button in the Fields section of the page (see Figure 9-3), which reveals the list of every field available to display on our view. To simplify finding the fields that we want, enter “created” in the Search box at the top of the list of fields, and from the list of results that is displayed, check the box next to the “Content: Authored on” field. Select the For option of “This block (override)” to prevent this field from being added to all of the other view displays that we’ve created, and then click the “Apply (this display)” button. The next screen provides options to configure how the “Authored on” field will be rendered, including the label displayed for that field, CSS styling options, what to do when there isn’t a value present for a given article, and other options. Leave all the values set to their defaults for the remaining options and click Apply.
+131
+
 
 
 	
