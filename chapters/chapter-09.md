@@ -173,9 +173,22 @@
 
 ##查看附加模块
 这里有额外的样式选项。但是在大多数情况下设置这些选项为默认值足够了。点击应用按钮完成这个这一步。
-A table with a single column is pretty boring, really nothing more than just a list. So to spice up the table let’s add two additional fields, one for the date that the article was created, and another for the tags associated with the article. We’ll add each field as a separate column. To add the fields, click the Add button in the Fields section of the page (see Figure 9-3), which reveals the list of every field available to display on our view. To simplify finding the fields that we want, enter “created” in the Search box at the top of the list of fields, and from the list of results that is displayed, check the box next to the “Content: Authored on” field. Select the For option of “This block (override)” to prevent this field from being added to all of the other view displays that we’ve created, and then click the “Apply (this display)” button. The next screen provides options to configure how the “Authored on” field will be rendered, including the label displayed for that field, CSS styling options, what to do when there isn’t a value present for a given article, and other options. Leave all the values set to their defaults for the remaining options and click Apply.
-131
+单列的表格是无聊的。只不过是显示一个列表而已。那么让我们添加2个额外的字段来丰富表。添加一个文章发布日期字段，另一个添加该文章相关的标签.我们将添加的每一个字段作为单独的一列。要添加字段，在页面的字段区域点击添加按钮(如图9-3)，在我们的视图上展示了列表上的每一个有效的字段。为了方便的找到我们想要的字段，在列表字段顶部搜索框输入"创建"，然后在表单中会显示搜索的结果列表。选择"内容：撰写"字段旁的复选框。选择"这个区块(覆盖)"选项是为了防止这个表单字段被添加到我们创建过的别的视图中显示。点击"应用(显示所有)"按钮。在下一个屏幕会提供这个"撰写"字段的配置选项来显示。包括字段的标签显示，CSS样式选项，当一个给定的文章没有值和选项的时候，该怎么做。为这些选项设置一个默认值然后点击应用。
+##视图附加模块
+这个视图模块它自己是一个有利工具来展示你的网站上内容。当你结合其他特定的模块，你会得到一个全新的强大的功能。这里有几个"必须拥有"附加模块，你不妨考虑用它来构建你的网站，这儿有一些我非常喜欢的模块：
 
+* 幻灯片视图(*www.drupal.org/project/view_slideshow*)：这个模块提供一个简单易用的界面，用于创建幻灯片内容显示视图。这里有许多幻灯片视图模块，但是这种是最容易使用的一个。
+* 日历(*www.drupal.org/project/calendar*)：需要显示日历事件？这是你的模块。它提供给你一个丰富的设置工具，创建并显示任何类型的日期字段和日期值包括（年，月，周，日）。在我所有的网站上它是一个必备的模块。
+* 轮播［*jCarousel*］（*www.drupal.org/project/draggableviews*）：我的大多数项目涉及一些轮播形式的内容显示。这个模块让创建一个内容项目列表更简单，作为它作为一个转盘轮流显示。
+* 拖拽视图(*www.drupal.org/project/draggableviews*)：希望提供一个管理界面，允许内容编辑病在视图中重新排列这些选项。在你的视图中该模块提供一个简单拖拽界面来重组项目。
+* 谷歌地图(*www.drupal.org/project/gmap*)：希望在地图上显示有地理(位置)信息内容？这个模块集成谷歌地图和视图，为了提供一个易于使用的解决方案，在地图上显示内容项。
+* 视图数据导出(*www.drupal.org/project/views_data_exprot*)：希望从你的网站导出内容到一个CSV文件，电子表格，Word文档，文本文件，或XML文件中？该模块提供了这样的功能。
+
+也有些附加视图附加模块，在这里我们没有讲到。请访问*www.drupal.ort/project/project_module*并在右列分类列表点击这个视图链接.在写文章的时候，有756个关于视图的贡献模块！通过浏览这个列表(记得看看是否是你感兴趣的Drupal8的模块版本)。人们已经创建了许多惊人功能的视图模块。
+
+##总结
+我仅仅了解到如何在你的心网站上使用视图。视图是非常强大的。是Drupal模块中一个"杀手锏"模块之一。
+到现在为止，我们把重点放创建区块内容，菜单和模块的基本组成部分。在下一章中，我们看看在使用这些元素来创建页面。
 
 
 	
