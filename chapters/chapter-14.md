@@ -160,10 +160,10 @@ Drupal提供了丰富的事件记录框架，对于管理Drupal站的人可能�
 
 在Drupal core被更新的情况下，这个过程是稍微复杂一些。要更新Drupal核心：
 
-1.确保你已经备份数据库！
-2.确保备份整个Drupal的目录！
-3.使用Drush，运行以下命令：drush up drupal
-4.测试您的网站。
+1. 确保你已经备份数据库！
+2. 确保备份整个Drupal的目录！
+3. 使用Drush，运行以下命令：drush up drupal
+4. 测试您的网站。
  
 更新Drupal core的另一种方法是，先备份modules，profile，sites和theme目录和.htaccess、web.config文件在您的网站的根目录下，一旦确保拷贝这些目录，下载Drupal core，并提取存档文件到您的网站的根目录。提取过程是：把Drupal放在一个你下载的带版本名字的子目录里（例如，Drupal-8.0.0-beta7），把子目录里的文件都移动到网站根目录。如果在Linux/OS X，使用以下命令:
 
