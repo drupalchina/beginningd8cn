@@ -9,7 +9,7 @@
 ## 安装 Git
 
 
-使用 Git 的第一步就是安装它。但是安装它之前，你可查看一下它是否已经安装过了。在终端窗口的命令提示行中键入`git`后按下<kbd>回车键</kdd>，如果你看到一系列 Git 命令，那恭喜你，你的 Git 早就安装好了。如果你看到的一些以 "command no found"（命令未找到）结尾的内容，那么是时候安装 Git 了。
+使用 Git 的第一步就是安装它。但是安装它之前，你可查看一下它是否已经安装过了。在终端窗口的命令提示行中键入`git`后按下<kbd>回车键</kbd>，如果你看到一系列 Git 命令，那恭喜你，你的 Git 早就安装好了。如果你看到的一些以 "command no found"（命令未找到）结尾的内容，那么是时候安装 Git 了。
 
 ## 在 Linux 上安装 Git
 
@@ -21,11 +21,11 @@
 
 ## 在 Windows 上安装 Git
 
-要在 Windows 上安装 Git，需要从 http://msygit.github.io 下载安装 Git 的 exe 文件。 这个Windows安装包会为你安装 Git 的工具，使你你能够在终端窗口中运行 Git 并且提供图形界面工具来管理你的 Git 仓库。 安装完成之后，启动一个终端窗口，在命令行中键入 `git`，按下<kbd>回车键</kbd>。 你应该会看到一系列的 Git 命令。 如果你没看到这一列命令，访问 http://msygit.github.io 寻求帮助。
+要在 Windows 上安装 Git，需要从 http://msygit.github.io 下载安装 Git 的 exe 文件。 这个Windows安装包会为你安装 Git 的工具，使你能够在终端窗口中运行 Git 并且提供图形界面工具来管理你的 Git 仓库。 安装完成之后，启动一个终端窗口，在命令行中键入 `git`，按下<kbd>回车键</kbd>。 你应该会看到一系列的 Git 命令。 如果你没看到一系列命令，访问 http://msygit.github.io 寻求帮助。
 
 ## 使用 Git
 
-在你使用 Git 的过程中，会有一些基础的 Git 命令会一直刺激你，让你逐渐喜欢上 Git 。使用 Git 的第一步是创建一个 Git 仓库。这个仓库里存放者你想要进行版本控制的所有东西。让我们使用安装完成的 Drupal 8 作为我们第一个 Git 项目，将它置于源代码控制状态下。使用终端，导航到你的 Drupal 8 项目的根目录下。 在终端窗口中，键入 `git init`，然后按下<kbd>回车键</kbd>。
+在你使用 Git 的过程中，会有一些基本的 Git 命令一直刺激你，让你逐渐喜欢上 Git 。使用 Git 的第一步是创建一个 Git 仓库。这个仓库里存放着你想要对它进行版本控制的所有东西。让我们使用安装完成的 Drupal 8 作为我们第一个 Git 项目，将它置于源代码控制状态下。使用终端，导航到你的 Drupal 8 项目的根目录下。 在终端窗口中，键入 `git init`，然后按下<kbd>回车键</kbd>。
 
 ------
 
@@ -42,8 +42,47 @@ Initialized empty Git repository in /Applications/MAMP/htdocs/drupal8/.git/
 仓库创建完成之后，下一步需要进行的是添加元素到仓库里。既然我们还没有添加任何文件，我们将会把 Drupal 8 目录下的所有文件添加到 Git 仓库中。完成这个任务，只需键入一下命令：
 
 ```bash
-git add -A
+git add -A .
 ```
+
+确保你输入的命令最后有那个小点点，因为它代表着当前目录。如果你成功地将所有的文件添加到仓库里，你将会返回到命令提示符状态下，并且没有错误信息显示。当你键入 `git status`时并按下<kbd>回车键</kbd>，你应该会看到一个长长的，包含着新增到仓库里但还未提交的文件列表。
+
+将刚刚添加的文件提交的操作给你提供一个快照。在未来当你遇到进行变更后需要恢复到之前状态的情况，你可以回滚到这个快照。 如何频繁添加和提交文件取决于你或者你的项目团队，关键点是只有那些已经添加并提交的文件才能够及时回滚到之前的状态。那么现在让我们使用下面的命令将 Drupal 8 的文件提交到我们的 Git 仓库中。
+
+```bash
+git commit –m "initial commit to the repository"
+```
+
+运行提交命令之后，你应该会看到一串关于新节点在你的 Git 仓库中创建的消息，每个提交的文件都会有一条消息。这时如果你运行`git status`命令，你应该会看到"everything is up to date"（所用文件都是最新的）：
+
+<pre>
+On branch master
+nothing to commit, working directory clean
+</pre>
+
+进行到这里，我们已经完成文件提交，并且获得了将文件恢复到刚刚提交时的状态的能力。接下来要进行的是对文件进行一些变更，并提交这些变更。让我们对已有的文件做一些修改，并且添加一个新文件，来看看 Git 对这两种情况是如何作出响应的。首先，在你的 sites/default/files 目录下创建一个文档。 为了演示，我们新建一个名为 test.txt 的文件，里面包含几行信息，这样我们就能看到 Git 在运转。文件创建完成之后，运行`git status`来验证 Git 已经检测到这个新文件。你应该会看到类似的输出：
+
+<pre>
+# On branch master
+# Untracked files:
+# (use "git add <file>..." to include in what will be committed)
+#
+# test.txt
+</pre>
+
+So let’s follow the instruction and use git add test.txt to add the file to Git. After adding the file, use git status to check to see that the file was added. You should see output similar to
+
+那么让我们跟随指引，使用`git add test.txt` 来将文件添加到 Git. 添加文件后，使用`git status`来看看文件是否已经被添加了。你应该会看到类似的输出：
+
+<pre>
+# On branch master
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# new file: test.txt
+#
+</pre>
+
 
 
 
