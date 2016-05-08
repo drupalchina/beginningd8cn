@@ -55,33 +55,31 @@ git commit –m "initial commit to the repository"
 
 运行提交命令之后，你应该会看到一串关于新节点在你的 Git 仓库中创建的消息，每个提交的文件都会有一条消息。这时如果你运行`git status`命令，你应该会看到"everything is up to date"（所用文件都是最新的）：
 
-<pre>
+```
 On branch master
 nothing to commit, working directory clean
-</pre>
+```
 
 进行到这里，我们已经完成文件提交，并且获得了将文件恢复到刚刚提交时的状态的能力。接下来要进行的是对文件进行一些变更，并提交这些变更。让我们对已有的文件做一些修改，并且添加一个新文件，来看看 Git 对这两种情况是如何作出响应的。首先，在你的 sites/default/files 目录下创建一个文档。 为了演示，我们新建一个名为 test.txt 的文件，里面包含几行信息，这样我们就能看到 Git 在运转。文件创建完成之后，运行`git status`来验证 Git 已经检测到这个新文件。你应该会看到类似的输出：
 
-<pre>
+```
 # On branch master
 # Untracked files:
 # (use "git add <file>..." to include in what will be committed)
 #
 # test.txt
-</pre>
-
-So let’s follow the instruction and use git add test.txt to add the file to Git. After adding the file, use git status to check to see that the file was added. You should see output similar to
+```
 
 那么让我们跟随指引，使用`git add test.txt` 来将文件添加到 Git. 添加文件后，使用`git status`来看看文件是否已经被添加了。你应该会看到类似的输出：
 
-<pre>
+```
 # On branch master
 # Changes to be committed:
 # (use "git reset HEAD <file>..." to unstage)
 #
 # new file: test.txt
 #
-</pre>
+```
 
 
 
