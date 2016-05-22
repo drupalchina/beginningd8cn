@@ -1,5 +1,6 @@
 #Drupal模块----第十一章:Drupal模块#
 ***
+译者：勇敢的心（鑫）
 >就现在的Drupal而言，它已经很惊人了。Drupal 8核心所提供的特性和功能往往超过使用Drupal建站的人员的需求。但有些时候你可能需要Drupal核心本身没有的功能。在这种情况下，为了达到预期——完成任何你想在基于Drupal的网站上实现的事情，你不妨看看那些数以千计的贡献模块。
  
 >在本章中，您将学习如何查找，安装，启用和配置贡献模块。
@@ -39,7 +40,7 @@
 正如你从这些例子中看到的那样，有数以千计跨越多种类别的模块。这里所列的类别的常规标题不利于展现隐藏其后的可用模块的丰富功能。通过扫描数百个模块来找到你需要的那个模块往往需要研究和耐心。复杂的要求，可能还需要多个模块一起来解决一个更大的问题。了解哪些模块做什么，哪些模块配合起来使用很好，哪些模块不能一起使用等常常是构建一个复杂的Drupal网站最大的挑战。 
 
 这里给出的一个建议是访问www.drupal.org/project/project_module ，在“排序方式（Sort by）”一栏中选择“最新发布（Last release）”排序选项，然后单击搜索（Search）按钮。出现的列表将显示最新的已经向社会发布的模块和模块更新。每隔一两天访问一次该网站，并通读网站上最新添加的或更新的模块的说明。每天只需要几分钟的时间，你就能快速了解那些模块以及通过 Drupal 提供的模块实现的方案的类型。
-第三方网站http://drupalmodules.com，能很好地帮助我们找到合适的模块。该网站提供了模块查找功能，使得为特定工作找到合适的模块变得更容易。
+第三方网站http://drupalmodules.com ，能很好地帮助我们找到合适的模块。该网站提供了模块查找功能，使得为特定工作找到合适的模块变得更容易。
 ##下载并安装一个模块##
 
 为你的站点安装一个新的模块有三个基本途径：下载模块文件到你的服务器、使用模块管理界面上的“安装新的模块（Install new module）”功能或使用Drush。我将在本章介绍前两种方法，并在第15章介绍如何使用Drush。
@@ -48,7 +49,7 @@
 ####下载模块文件到您的服务器####
 我将通过下载模块文件到我的 Drupal 8 网站的模块目录来演示如何安装 Google Analytics module 。步骤如下：
  
-1. 访问 Drupal.org/project/modules 找到该模块。您可以使用搜索功能或模块页面上的过滤器来查找一个模块，但是要知道Drupal.org对模块的网址（URL）的标准命名法是以模块的名称作为URL的最后元素。快速搜索谷歌分析模块：访问  www.drupal.org/project/google_analytics。
+1. 访问 Drupal.org/project/modules 找到该模块。您可以使用搜索功能或模块页面上的过滤器来查找一个模块，但是要知道Drupal.org对模块的网址（URL）的标准命名法是以模块的名称作为URL的最后元素。快速搜索谷歌分析模块：访问 www.drupal.org/project/google_analytics。
  
 2. 向下滚动到该模块的下载部分。在大多数情况下，你应该选中要安装模块的最新版本。最新版本以绿色背景高亮显示。在某些情况下，你可能需要使用一个仍处于开发阶段的模块，如果一个稳定的版本尚未公布。开发版本通常以红色背景高亮显示，并且具有以-dev结尾的版本号。您应该谨慎使用预（DEV）版本的模块，因为这些模块都尚未完全开发，并没有被彻底地测试。要下载一个模块，右键单击 tar.gz 链接（下载 Drupal8 的版本），然后单击你的浏览器提供的弹出菜单中的保存（Save）选项。如果你的 Drupal 8 安装在本地计算机上，你可以在你的安装 Drupal 的模块目录中直接保存tar.gz文件。如果你的Drupal没有安装在本地计算机上，使用 FTP 将文件复制到模块目录服务器上。模块目录位于在你建立的网站根目录Drupal 8 中。
  
@@ -66,9 +67,13 @@
 
 ![图11-1  Drupal模块](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-1.png?raw=true)
 
+图11-1  Drupal模块
+
 1. 要开始安装过程，请点击网页顶部附近的“安装新模块（Install new module）”按钮，然后将弹出安装模块的页面，见图11-2。
 
 ![图11-2 该模块安装页面](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-2.png?raw=true)
+
+图11-2 该模块安装页面
 
 
 2. 在安装模块的页面上，也提供了模块的安装文件的URL（来自Drupal.org），或在您下载该模块到您的计算机的情况下，使用“上传一个模块或主题（Upload a module or theme）”功能来从你的电脑把该文件上传到服务器。为了简化这个过程，我们将使用第一个文本框来指定我们将要安装的 Display Suite module 的URL。要找到 Display Suite module 的网址，请访问       www.drupal.org/project/ project_module ，在“Core compatibility” 选择列表中选择“8.x”，并在搜索模块文本框（Search Modules）中输入“Display Suite”。单击搜索（Search）按钮。在搜索结果中，向下滚动，直到你在列表中看到  Display Suite module ，点击标题将显示该模块的主页。你应该是www.drupal.org/project/ds的页面，其中ds是模块开发人员使用的 Display Suite 的缩写。
@@ -77,12 +82,16 @@
 
 ![图11-3  可用版本的显示模块套件](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-3.png?raw=true)
 
+图11-3 Display Suite 的可用版本
+
 
 4. 要捕获安装文件的URL，右键单击您要安装的版本的下载链接，然后从浏览器的选项菜单中选择相应的复制链接位置（copy link location）选项。返回到模块管理页面，将URL粘贴在上面的文本框中，您现在就可以安装该模块了。
 5. 要开始安装过程，点击安装按钮。 Drupal将自动从Drupal.org下载安装文件，解压压缩文件，并将所有文件以及模块相关的目录移到你的服务器的相关目录中，然后运行与模块相关的安装脚本。
 6. 模块现在已安装但尚未启用。要启用该模块，必须选中模块管理页面上相应的复选框（见图11-4），并点击页面底部的“保存配置（Save configuration）”按钮。对于 Display Suite 模块，你至少需要启用 Display Suite 和 Display Suite UI 模块。
 
 ![图11-4  模块管理页面](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-4.png?raw=true)
+
+图11-4  模块管理页面
 
 此时Display Suite module已安装启用完毕，可以使用了。现在，您可以按照相同的步骤来为你的网站安装任何你想要的贡献模块。
 
@@ -95,15 +104,22 @@
 我们在前面的步骤中安装了 Google Analytics module ，还需要设置权限，以便管理员可以管理 Google Analytics module 的配置参数。向下滚动权限列表，直到找到该模块(见图11-5)。
 
  ![图11-5。权限谷歌分析模块](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-5.png?raw=true)
- 
+
+ 图11-5 Google Analytics module 的设置
+
 要为该模块设置权限，勾选管理员一栏中 Google Analytics 管理员对应的复选框，然后单击页面底部的“保存权限 (Save permissions) ”按钮。现在，你已经能够为网站的管理员设置 Google Analytics module 的配置参数了。当你安装启用其他模块时，记住审查并设置该模块的权限。
 
 一些模块可以设置配置参数，如 Search module （Drupal core 的一部分）。要查看模块的配置参数，请点击页面顶部管理菜单中的管理（Manage）链接，然后点击二级菜单中的配置（Configuration）链接。配置页面列出了所有能够设置配置选项的模块（见图11-6）。不是所有的模块遵循这个惯例。如果您没有看到你正在处理的模块的配置链接，查看 Drupal.org 上该模块主页里相应的文档，或者检查您的站点中模块目录中对应的 readme.txt 文件。
 
 ![图11-6模块的配置页面](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-6.png?raw=true)
+
+图11-6 模块配置页面
+
 当查看模块配置页面时（见图11-6），你会看到一个搜索和元数据部分，在这部分，有一个搜索设置的链接。点击该链接以查看搜索的配置参数（见图11-7）。
 
-![图11-7 搜索模块配置选项](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-7.png?raw=true)
+![图11-7 搜索的配置选项](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-7.png?raw=true)
+
+图11-7 搜索的配置选项
 
 不是所有的模块提供设置配置参数的能力;它依赖于模块做什么，以及模块开发者确定这些配置选项是否必要。你最好访问一下设置页面，检查所有已安装并启用的模块的配置选项，以确保它们被正确地设置。
 ##启用其他模块##
@@ -112,6 +128,8 @@
 
 ![图11-8 模块管理页面](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-8.png?raw=true)
 
+图11-8 模块管理页面
+
 Drupal的模块管理页面被分为几个部分，每个部分包含一个或一组模块。被作为 Drupal core 的一部分的模块，在列表中的核心（Core）部分。为了演示，我们将启用一个默认情况下不在 Drupal 的安装过程中启用的模块—— Aggregator module 。正如图11-8所示， Aggregator module 不被选为启用（模块名称左侧的复选框指示模块启用与否）。要启用模块，立即选中模块名称左侧的复选框，并滚动到页面的底部，点击“Save configuration（保存配置）”按钮来启用该模块，以便它可以在你的新网站中使用。
 点击“Save configuration（保存配置）”按钮后，Drupal将重新显示模块管理页面，同时在页面顶部显示“successful configuration（配置成功）”消息。 Aggregator module 现在可以使用了。
 ##升级模块##
@@ -119,6 +137,9 @@ Drupal的模块管理页面被分为几个部分，每个部分包含一个或�
 Drupal 模块的升级往往是修复了漏洞和附加新的功能。幸运的是，当一个模块的新版本已经发布，Drupal 会告诉你，并提供了自动更新该模块到最新版本的机制。要查看所有可用的更新，只需点击模块管理页面顶部的更新选项卡（见图11-8），或点击管理下的二级菜单中的报告链接，然后单击“Available updates（可用更新）”链接（见图11-9）。
 
 ![图11-9 报告页面](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-9.png?raw=true)
+
+图11-9 报告页面
+
 ***
 注意：可能有些情况下你不想升级模块;例如，升级一个模块将会中断另一个相关模块。我建议你在进行更新之前，查看 Drupal.org 的论坛，看是否有人已经报告了问题。
 ***
@@ -127,6 +148,9 @@ Drupal 模块的升级往往是修复了漏洞和附加新的功能。幸运的�
 可能有这些情况：你在安装了一个模块后却发现它不是你想要的那样，或者它会给你的网站带来问题。在模块管理页面的顶部，你会发现“Uninstall（卸载）”选项卡。单击该选项卡将会显示具有自动卸载能力的模块的列表（见图11-10）。要卸载模块，选中模块旁边的复选框，点击页面底部的“卸载”按钮。
 
  ![图 11-10模块卸载页面](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-10.png?raw=true)
+
+图 11-10模块卸载页面
+
 ***
 注意：并非所有模块都有自动执行卸载的能力。这种功能是由模块开发人员创建的。并不是所有模块开发人员都很友善地提供此功能。
 ***
