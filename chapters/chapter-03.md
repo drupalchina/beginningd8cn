@@ -153,12 +153,12 @@ Drupal核心和每个贡献模块提供了一组预定义的权限，您必须�
 
 出于演示的目的，我们将通过输入以下值来创建一个新的用户帐户：
 
-在E-mail地址字段中输入：johnsmith@example.com。
-在用户名字段中输入：JohnSmith。
-在密码字段中输入：12JohnSmith34。
-在确认密码字段中输入：12JohnSmith34。
-Status ，确认选Active。
-Roles，选上“company user”选框
+- 在E-mail地址字段中输入：johnsmith@example.com。
+- 在用户名字段中输入：JohnSmith。
+- 在密码字段中输入：12JohnSmith34。
+- 在确认密码字段中输入：12JohnSmith34。
+- Status ，确认选Active。
+- Roles，选上“company user”选框
 
 选上“通知新帐户的用户”选框（单击此选项使得Drupal能够发送一封邮件给用户，通知他们自己的新帐户）。
 
