@@ -1,10 +1,8 @@
 # 第十八章 响应式网站#
 
-##创建一个响应式网站
-
 翻译：蹊
 
-就在几年前，智能手机和平板电脑并不存在，如今我们生活在一个分析家预测下的手机和平板电脑的网站流量于2014年超过笔记本和台式电脑的世界里。我们生活在一个移动端的世界，作为Drupal网站建设者，重要的是要解决日益增长的智能手机和平板电脑，在我们建立新站点的时候，开始优先考虑移动端，这对我们来说是明智的。 大多数的用户访问我们的网站是在较小的屏幕上，无论他们使用什么设备，（Drupal）都能提供了不起的用户体验。 		
+就在几年前，智能手机和平板电脑并不存在，如今我们生活在一个分析家预测下的手机和平板电脑的网站流量于2014年超过笔记本和台式电脑的世界里。我们生活在一个移动端的世界，作为Drupal网站建设者，重要的是要处理日益增长的智能手机和平板电脑，在我们建立新站点的时候，开始优先考虑移动端，这对我们来说是明智的。 大多数的用户访问我们的网站是在较小的屏幕上，无论他们使用什么设备，（Drupal）都能提供了不起的用户体验。 		
 
 幸运的是，Drupal 8 能处理在不同宽度屏幕上渲染站点的挑战（手机，phablets，平板电脑，笔记本电脑，台式电脑，电视）在这一章里，我们将着眼于利用Drupal 8响应式工具和响应式主题，以及步入基本的CSS主题处理响应性。
  
@@ -18,18 +16,56 @@
  
 响应网页设计作品通过结合检测网站访问者使用的设备的屏幕宽度，利用CSS定义元素基于屏幕的宽度如何在页面上显示。比如一个页面,该页面有三个等宽列，每个占屏幕宽度的33% 。如果你在配有15英寸屏幕1680像素的笔记本电脑的页面浏览，每列宽约560像素则该网站会看起来不错（见图18-1）。
 
-##制作你的响应式站点
+![图18-1 普通笔记本的屏幕分辨率](../images/pic-18-1.png) 
 
-当你看到市场的各种设备,你会发现你可能需要在你的css文件里用几个 media queries 去解决你的站点在不同设备上的渲染。 media queries 的个数取决于你的页面在屏幕上缩放的时候，内容的格式出现多少变化。如果你的站点是单栏设计，那么你能够侥幸不使用 media queries，多数站点不止一栏，甚至单栏站点也需要为横向菜单做出调整。
+**图18-1. 普通笔记本的屏幕分辨率**
+
+打开iPhone上的同一页，列缩小到320像素的33%，约106像素。列变得狭长，列中的文本变得看不到——最好的是浏览者必须滚动到左边或右边，才能看到非常小的文本列和图片（见图18-2）.
+
+![图18-2 普通iphone4的屏幕分辨率](../images/pic-18-2.png) 
+
+**图18-2. 普通iphone4的屏幕分辨率**
+
+更好的方法是检测到用户正在用320像素宽的设备浏览，用每列320像素或100%宽度取代水平三列横跨页面，各列堆积在顶部。就像在15英寸的笔记本电脑上看一样，每列几乎是一样宽，在iPhone4上依然可以看到（见图18-3）。
+
+![图18-3 列堆积](../images/pic-18-3.png) 
+
+**图18-3. 列堆积**
+
+Media Queries是一个CSS工具，结合浏览器报告屏幕的宽度，让你专门为给定宽度的设备写css。media query的一般格式是：
+
+@media (max-width: 600px) {
+
+.body {
+
+font-size: .9em;
+
+}
+
+}
+
+query 始于@media和最大宽度：600px的指定范围内，{}里面的css只能在600px或更小的浏览器窗口被应用。你也可以指定你查询的宽度范围：
+
+@media (min-width: 321px) and (max-width: 599px) {
+ 
+.body {
+
+font-size: .7em;
+
+}
+
+}
+
+在这种情况下，任何设备的屏幕宽大于等于321px和小于等于599px之间css会包含{}的应用。在前面的两个例子中，设备上的任何文本在600px宽以内字体有 .9em，设备在321px到599px宽会有 .7em，（解释em的单元将在之后章节“普通css变成响应式”这一段提到）。
+
+当你看到市场的各种设备，你会发现你可能需要在你的css文件里用几个 media queries 去解决你的站点在不同设备上的渲染。 media queries 的个数取决于你的页面在屏幕上缩放的时候，内容的格式出现多少变化。如果你的站点是单栏设计，那么你能够侥幸不使用 media queries，多数站点不止一栏，甚至单栏站点也需要为横向菜单做出调整。
  
 ##制作你的响应式站点
 
 制作你的Drupal8 站点有三个基本选择：
  
 -	从 Drupal.org 选择一个现成的主题，含有 media queries 定义的跨设备工作的主题样式表和css。
-
--	选择一个初始主题，比如，从 Drupal.org 下载Zen这个主题，在该主题的响应式框架上构建。
-　　
+-	选择一个初始主题，比如，从 Drupal.org 下载Zen这个主题，在该主题的响应式框架上构建。　　
 -	采用无响应式的主题，添加 media queries 和 width-specific CSS，使得站点在任何宽度都能渲染正常。
 
 每种方法都有其优点，取决于您的CSS的合适程度和你识别页面上的元素需要做出改变的能力，这种改变基于访问站点的游客的屏幕宽度
@@ -40,15 +76,90 @@
  
 在选择和安装所需的主题后，最好下载浏览器插件，这样可以很容易看到你的站点在不同宽度设备上的效果（除非你足够富有去购买市场上每一种设备）。Chrome被称为响应式网页设计测试的优秀工具。谷歌商店提供了一个免费的插件，提供常用设备的下拉式列表。单击工具栏上的工具图标,你会看到设备列表(见图18-4)。选择列表后，一个新的Chrome窗口就会打开，显示你的站点在那个设备上的效果。Firefox和Safari也有类似插件，工作一样好。
 
-##修改普通css解决响应式
+![图18-4 chrome浏览器的 Responsive Web Design Tester 插件](../images/pic-18-4.png) 
 
-针对iphone4的特定元素。加入以下 media query 和css相关条目，在iphone4或更小的屏幕的设备上能特殊变化。
+**图18-4. chrome浏览器的 Responsive Web Design Tester 插件**
+
+有了浏览器的工具，下一步是看你的网站在不同的屏幕宽度和回答下列问题：
+
+1. 在页面上哪些元素需要调整合适的显示（例如，列，图像和字体大小）
+1. 对于较小的屏幕，哪些元素应该从页面中删除？重点应该是对小屏幕的用户来说最重要的内容。
+1. 哪些导航元素需要改变，使得导航对小型设备来说不需要鼠标去指向和点击。
+
+很可能，你会发现有的元素在不同的屏幕宽度下，为了在小屏幕宽度下可用，需要做出改变。为了能够改变元素的显示你需要找到你的主题的样式表（典型找到themes/<themename>/css）和加上需要能够调整css的media queries。以下是media queries的推荐列表，在如今市场上的多数屏幕宽度上可用。
+
+/* Smartphones (portrait and landscape) ----------- */ 
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+
+{ /* Styles */ }
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width : 321px)
+
+ { /* Styles */ }
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width : 320px)
+
+ { /* Styles */ }
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+
+{ /* Styles */ }
+
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width : 768px) and(max-device-width : 1024px) and
+(orientation : landscape) { /* Styles */ }
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) 
+
+{ /*Styles */ }
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width : 1224px) 
+
+{ /* Styles */ }
+
+/* Large screens ----------- */
+
+@media only screen and (min-width : 1824px)
+
+ { /* Styles */ }
+
+/* iPhone 4 ----------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)
+
+ { /* Styles */ }
+
+你会注意到，一些media queries指定所使用的设备的方向，纵向或横向。这只是另一种工具，用于收缩将被应用到设备上的css。
+
+根据你使用的主题，media queries 将被放在 style.css 或者layout.css的结尾。如果你使用的主题已经通过 media queries 支持响应式，在这上面构建是个好主意。在Bartik主题的情况下，看着CSS目录，你会看到三个CSS文件：layout.css，style.css和colors.css。如果检查layout.css文件，你会看到主题的创建人已经在css 文件里放了两个 media queries。
+
+@media all and (min-width: 560px) and (max-width: 850px)
+
+@media all and (min-width: 851px)
+
+这两个 media queries 包含若干css 对元素的覆写，这些元素出现在使用这个主题的站点的各个页面。这两个 media queries 用于调整所有页面的元素，从而在所有设备上可用的用例，但是这里还有需要你去调整针对iphone4的特定元素的用例。加入以下 media query 和css相关条目，在iphone4或更小的屏幕的设备上能特殊变化。
 
 @media all and (max-width: 320px)
 
 你可能需要调整普通元素，列宽，字体大小和图像尺寸。用浏览器的响应式页面设计工具查看站点，这会帮你识别哪些元素需要改变。
 
-##修改普通css解决响应式
+##修改普通css处理响应式
 
 其中的第一要考虑的事情是，当设计一个响应式网站需要改变固定的像素宽度和基于点的字体大小。多年来，我们一直在设计像素完美的站点，但响应式设计，我们需要将我们的思维从精确的像素转向百分比和ems。如果你是一个有经验的设计师和css开发者，改变你看待设计和用css实现设计是最难的一个方面。一旦您完成了转型，这个过程将是比较简单的——但是，我们要开始思考页面上的元素尺寸将要消耗的显示宽度的百分比。如果你留在固定的像素宽度，其结果将是您的小屏幕设备的访问者要水平滚动才能看到你的网站完整宽度。举个例子，用你的智能手机查看whitehouse.gov。不幸的是，这个网站没有响应式（到2015年初），需要你用你的手指向右滚动，才能看到该网站的整个宽度。
 
@@ -56,16 +167,15 @@
 
 要确定改变哪些CSS元素，使用谷歌Chrome Responsive Web Design Tester，只需右键单击您要更改的元素，然后选择 Inspect Element 选项。（见图18-5）
 
-![图18-5 使用chrome的检查元素工具](../images/pic-18-5.png) 
+![图18-5 使用chrome的 Inspect Element 工具](../images/pic-18-5.png) 
 
-图18-5。使用Chrome的检查元素工具
+**图18-5. 使用Chrome的 Inspect Element 工具**
 
-响应主题变成了一个与 media queries 结合的相对简单的任务，像Chrome 的 Responsive Web Design Tester 这种浏览器响应式设计工具，右键单击项目就能识别哪些css元素是你想要改变的。剩下的唯一一件事情就是用你的 media query 的 brackets 添加css选择器改变css属性，比如把宽度调到一个合适的值，浏览器完成剩下的事情。
+响应主题变成了一个与 media queries 结合的相对简单的任务，像Chrome 的 Responsive Web Design Tester 这种浏览器响应式设计工具，右键单击项目就能识别哪些css元素是你想要改变的。剩下的唯一一件事情就是用你的 media query 的 {} 添加css选择器改变css属性，比如把宽度调到一个合适的值，浏览器完成剩下的事情。
 
 从响应式设计到表现适宜的跨越设备宽度，有一个学习曲线
 。旅程从第一步开始，你现在有足够的知识兴致盎然的走出去。
 
-##本章小结
-**概要**
+##概要
 
-在今天的移动世界，建立一个网站，如果不是响应移动设备的网站，那么你的大部分站点访问者会在用户体验上有挫败感。花一些时间给你的css文件增加一些 media queries 和 css overrides，您的网站的访问者会更开心。虽然不可能总是取悦所有的人，至少试图解决您的网站访问者将要使用的设备是个好主意。正如你在本章中看到的，它确实不难，而且实际上很有趣！
+在今天的移动世界，建立一个网站，如果不是响应移动设备的网站，那么你的大部分站点访问者会在用户体验上有挫败感。花时间增加一些 media queries 和覆写 css ，您的网站的访问者会更开心。虽然不可能总是取悦所有的人，至少试图处理您的网站访问者将要使用的设备是个好主意。正如你在本章中看到的，它确实不难，而且实际上很有趣！
