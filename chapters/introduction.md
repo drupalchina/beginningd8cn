@@ -10,7 +10,7 @@ Todd Tomlinson 在亚利桑那州吉尔伯特镇Unicon公司担任Drupal高级�
  
 关于技术审查
 
-Clive Linsell 是一名ISOS&#40;www.isos.comISOS&#41;的高级开发人员。他计划，开发并交付了几十个商业级的解决方案，覆盖了广泛的行业。他广泛的用PHP&#40;Drupal，Symfony，CodeIgniter等&#41;，C＃，Ruby和&#40;最近的&#41;Swift进行工作。他会弹吉他和钢琴，还是利物浦足球俱乐部的忠实支持者。大多可以在Drupal Answers&#40;http://drupal.stackexchange.com&#41;找到他，他的帮助相当于版主。
+Clive Linsell 是一名ISOS（www.isos.com）的高级开发人员。他计划，开发并交付了几十个商业级的解决方案，覆盖了广泛的行业。他广泛的用PHP（Drupal，Symfony，CodeIgniter等），C＃，Ruby和（最近的）Swift进行工作。他会弹吉他和钢琴，还是利物浦足球俱乐部的忠实支持者。大多可以在Drupal Answers（http://drupal.stackexchange.com）找到他，他的帮助相当于版主。
 
 致谢
 
