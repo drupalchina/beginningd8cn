@@ -151,13 +151,9 @@ Figure 5-7. 事件类型的管理字段页面
 
 接下来是设置时间字段为是日期和时间或者是仅有日期,还有该字段允许的数量 (见Figure 5-11)。 通常一个事件往往只对应一个时间,因此我们为“日期类型(Data type)”设置“日期和时间(Date and time)”,将“允许的值数量(Allowed number of values)”选项设置为“限制(Limited)”并且"1",因为我们的事件仅仅发生一次。 你会发现"允许的值数量"配置选项将会出现在每一次的字段创建中,你也许有场景需要用户针对一个字段有创建多个值得能力。比如，将来相同的时间发生多次. 那么我们可以设定"允许的值数量"为大于1的数,那么在我们创建该类型的内容时，将会产生对应数量的该字段的输入框. 如果你设置为"不限制",那么用户将会通过“添加(add another)”按钮随意创建任意个值。 因此在创建字段之前我们需要想清楚该字段具体什么作用,然后设置"允许的值数量",也许 1 并不是最好的解决方案。 点击"保存字段设置(Save field settings)"按钮继续下一步。
 
-</br>
 
 ![](http://llwoll.github.io/2016/04/20/Drupal-%E5%86%85%E5%AE%B9%E7%B1%BB%E5%9E%8B/setting_date.png)
 
-
-</br>
-</br>
 
 Drupal 显示的下一个表单将会向你展示关于事件开始事件字段的更多配置细节,在这个表单中你将会做以下工作
 
@@ -166,12 +162,8 @@ Drupal 显示的下一个表单将会向你展示关于事件开始事件字段�
 * 定义这个字段是否为必须字段。 一个必须字段将会用红色星行标注,Drupal 将会在用户保存前强制用户输入这个字段的值。因为我们的内容类型是关于事件,并且日期对于事件是非常重要的字段,因此我们将会选择"Required field"单选框。
 * 定义是否为该字段设定一个默认值。 因为我们我们处理的将来的某个日期,提供一个默认的值没有任何作用。 当然对于某些字段是很有必要的,比如选择一个默认的座位。
 
-</br>
-</br>
 ![](http://llwoll.github.io/2016/04/20/Drupal-%E5%86%85%E5%AE%B9%E7%B1%BB%E5%9E%8B/setting_date2.png)
 
-</br>
-</br>
 
 点击"保存设置(Save settings)"按钮完成开始日期字段的配置,Drupal将会重新显示已经添加了开始日期字段(Start Date)的“管理字段(Manage field)”页面(见Figure 5-13)。
 
@@ -181,7 +173,6 @@ Drupal 显示的下一个表单将会向你展示关于事件开始事件字段�
 现在我们添加其他字段: 结束时间,事件描述,和事件地址. 按照之前的创建结束时间字段。当创建时间地址的时候,选择"文本(格式化,长)"  。当你完成后，你的列表将会如Figure 5-14
 
 ![](http://llwoll.github.io/2016/04/20/Drupal-%E5%86%85%E5%AE%B9%E7%B1%BB%E5%9E%8B/event_List.png)
-
 
 
 我们的事件类型已经准备好,为了测试新的类型,点击左上角的“返回站点(Back to site)"按钮并且点击"添加内容(Add Content)"链接,我们将会看到一个新的内容类型列表。
@@ -197,7 +188,6 @@ Drupal 显示的下一个表单将会向你展示关于事件开始事件字段�
 ![](http://llwoll.github.io/2016/04/20/Drupal-%E5%86%85%E5%AE%B9%E7%B1%BB%E5%9E%8B/content_view.png)
 
 
-
 ## 5.5 其他字段类型
 
 在我们的事件内容类型中,我们创建了一些方便用户输入日期和地点的字段。这里有一些除文本外的字段类型。
@@ -209,20 +199,21 @@ Drupal 显示的下一个表单将会向你展示关于事件开始事件字段�
 * 图片上传(Image upload): 上传并显示图片
 * 文本区域(Text area) : 提供输入一个段落,它将会提供一个可以输入多行的文本框,text 字段只能提供单行的文本输入
 * 数字字段(Numeric field) : 数字输入
-* 实体字段(Entity reference fields) : 用于关联其他内容类型                                                                           
+* 实体字段(Entity reference fields) : 用于关联其他内容类型
 * Term reference field : 关联分类相关字段(taxonomy terms)
 
 这些字段类型全部来自于Drupal 8核心模块。 还有一些社区自定义的字段类型可以在贡献模块中找到,你可以在 www.drupal.org/project/modules 页面,通过在"Module categories"过滤选择 fields,然后开始搜索,你将会找到很多扩展模块
-	
+
 ### 5.5.1 单选按钮与复选框(Radio Buttons & Check box)
 
 
 ![radio_buttons](http://work.beiweng.org/d/file/drupal/chapter5/2016-04-08/03effcb355bd3630bf41f53d5da21197.png)
 
-图5-17。添加列表字段
+图5-17. 添加列表字段
 
 
-{%asset_img radio_button.png radio_button%}
+{% asset_img radio_button.png radio_button %}
+
 1. 如图5-17,首先我们添加list
 2. 如图5-18,枚举列表的值
 	* 格式问题:使用 key | label 这样的格式枚举每一个值,其中被选中的key将会被存储到数据库中,而label 将能够被用户看到
