@@ -35,10 +35,10 @@ ___
 
 ___
 
-5. 测试系统可以找到Drush：  
+5.测试系统可以找到Drush：  
 	`$ which drush`
 
-6. 在Drush根目录下，运行Composer获取依赖关系：  
+6.在Drush根目录下，运行Composer获取依赖关系：  
 	`$ composer install`
 
 要查看Composer的更多信息，请访问 https://getcomposer.org/doc/00-intro.md
