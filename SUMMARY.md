@@ -15,7 +15,7 @@
 * [第12章 模块剖析](chapters/chapter-12.md)
 * [第13章 多语言功能](chapters/chapter-13.md)
 * [第14章 管理站点](chapters/chapter-14.md)
-* 第15章 使用 Drush
+* [第15章 使用 Drush](chapters/chapter-15.md)
 * [第16章 使用 Git](chapters/chapter-16.md)
 * [第17章 全部放在一起](chapters/chapter-17.md)
 * [第18章 响应式网站](chapters/chapter-18.md)
