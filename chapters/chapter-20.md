@@ -212,7 +212,7 @@ featured_3: 'Featured Third'
 我们早些时候再本章明确的一个功能需求是去收集新闻文章从外部网站并聚合这些文章到公司网站。聚合模块是Drupal核心模块且是一个伟大的解决方法。默认情况下聚合模块是关闭的可以浏览扩展页面开启功能。点击扩展链接在二级菜单并见聚合模块前的选择框选中。点击保存配置按钮来开启聚合模块。
 
 下一步是去定义从哪个元来推送信息。在配置页面，找到并点击“源聚合”链接（Web服务项内）。在“源聚合”页面，点击“添加源”按钮来设定一个新闻源。作为演示目的，我们选择“Reuters Business
-News RSS feed”作为我们新闻源的来源，在标题字段输入“Latest Business News”并拷贝和粘贴URL(http://feeds.reuters.com/reuters/businessNews)到URL地址栏.保留更新间隔为1小时，这是Drupal从Reuters网站查询新的新闻文章的频率。在保存新闻源后，运行cron来从Reuters网站推送新闻（配置➤Cron）。在运行cron后，回到源聚合配置页面并点击源的标题来浏览最新的新闻（见图20-8）.
+News RSS feed”作为我们新闻源的来源，在标题字段输入“Latest Business News”并拷贝和粘贴URL( http://feeds.reuters.com/reuters/businessNews )到URL地址栏.保留更新间隔为1小时，这是Drupal从Reuters网站查询新的新闻文章的频率。在保存新闻源后，运行cron来从Reuters网站推送新闻（配置➤Cron）。在运行cron后，回到源聚合配置页面并点击源的标题来浏览最新的新闻（见图20-8）.
 
 ![图20-8  来自Reuters的最新新闻](../images/pic-20-8.png)
 
