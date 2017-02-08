@@ -13,12 +13,12 @@
 ###第2步：创建模块信息文件
 下一步骤是创建一个hello.info.yml文件。此文件告诉Drupal的有关你的模块，并提供了出现在网站的管理部分的扩展页信息。使用您喜欢的文本编辑器，创建一个具有以下内容的hello.info.yml文件：
 
-name: Hello  
-type: module  
-description: 'My first Drupal 8 module.'   
-package: Awesome modules  
-version: 1.0  
-core: '8.x'
+    name: Hello  
+    type: module  
+    description: 'My first Drupal 8 module.'   
+    package: Awesome modules  
+    version: 1.0  
+    core: '8.x'
 
 第一行指定，因为它是出现在模块页面上的模块的名称。第二行指定，我们正在创建一个模块。 （例如，将使用主题为类型的值）。第三行是模块的描述，这也会出现在扩展页上。包字段为分组模块组合在一起的机制。例如，如果你访问你的站点的扩展页面，你会看到一个数字在一个盒子里有核心的标题所列的模块。我们将使用一些独特的东西对我们的模块，并将其放置在一个名为`Awesome modules`的包中。如果你正在写一个模块，例如，创建新的Web服务功能，您应该使用创建Web服务的其它模块的包名，以确保网站管理员可以很容易地找到你的模块。版本为模块创建一个版本号，以及核心指定了的Drupal版本在此模块用于写入。在我们的例子中，我们记这个模块为Drupal8。
 
@@ -101,6 +101,6 @@ Drupal8 遵循的Symfony的和PHP 5的面向对象的方法。其中Drupal8采�
 勾选旁边模块的名称，然后单击“保存配置”按钮来启用模块，模块启用后您现在就可以测试你的第一个Drupal8模块了！要执行模块，跳转到您的主页，并添加/hello到URL的末尾（我们定义了我们的模块的路由文件的路径）。你应该看到如图12-1前面显示的内容。
 
 ##其他模块文件
-我们的Hello模块是一个很简单的模块，其目的是帮助你了解一个模块是如何在Drupal构造的最初的学习曲线。现在你知道了非常基本的模块，你可以看看其他贡献模块，甚至是Drupal8核心，看更复杂的模块中创建学习与增加的复杂性相关的文件。您可以在www.drupal.org/ developing/modules/8了解。我强烈推荐从www.drupal.org/ project/examples下载.在这个模块你会发现，展示的Drupal8模块是如何构造的，一个伟大的起点，用于创建Drupal8模块的几个例子。
+我们的Hello模块是一个很简单的模块，其目的是帮助你了解一个模块是如何在Drupal构造的最初的学习曲线。现在你知道了非常基本的模块，你可以看看其他贡献模块，甚至是Drupal8核心，看更复杂的模块中创建学习与增加的复杂性相关的文件。您可以在 www.drupal.org/ developing/modules/8 了解。我强烈推荐从 www.drupal.org/ project/examples 下载.在这个模块你会发现，展示的Drupal8模块是如何构造的，一个伟大的起点，用于创建Drupal8模块的几个例子。
 ##概要
 恭喜！你写了第一个Drupal8模块，并获得你的第一个信心朝着成为一个Drupal模块开发的忍者。本章的目的是给你一个概述，所以你将在获得足够的信息去通过其他模块探索。虽然为Drupal模块开发学习曲线比较陡，这是你采取沿着这条道路的第一步。

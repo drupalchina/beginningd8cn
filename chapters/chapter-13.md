@@ -42,7 +42,7 @@
   正如在检测方法一栏所示，你将有多种选择来指定Drupal如何决定选择哪种语言来呈现网页元素：
 
 
-- 通过URL匹配的方式指定语言选择,例如：http://example.com/en为英文版本，http://example.com/ru俄语版本。
+- 通过URL匹配的方式指定语言选择,例如: http://example.com/en 为英文版本, http://example.com/ru 俄语版本。
 
 
 - 通过一个通过自定义代码设定并存储在缓存中的缓存参数指定。

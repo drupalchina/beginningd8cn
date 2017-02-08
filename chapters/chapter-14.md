@@ -76,7 +76,7 @@ drush sql-dump –-result-file=<filename>
 
 ##用 Backup and Migrate 恢复
 
-如果你需要用备份和迁移这个模块创建的备份恢复系统，请返回到 Backup and Migrate 管理页面（http://localhost/admin/content/backup_migrate），并选择备份文件恢复系统。单击 Destinations 选项卡，显示存储备份的目标目录列表。参见图14-4。 
+如果你需要用备份和迁移这个模块创建的备份恢复系统，请返回到 Backup and Migrate 管理页面（ http://localhost/admin/content/backup_migrate ），并选择备份文件恢复系统。单击 Destinations 选项卡，显示存储备份的目标目录列表。参见图14-4。 
 
 ![图14-4 存储备份的目标目录列表](../images/pic-14-4.png) 
 
