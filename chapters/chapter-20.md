@@ -82,7 +82,7 @@
 
 为我们的企业网站项目，我们将主要放在第二个选择上，使用一个起始主题。一个起始主题提供了创建主题的基础，它表达了一个网站特定的设计需求。从设计的角度来看，一个起始的主题是相当鲜明的，这是重点放在起始主题基础上的目的性，而不是视觉设计。
 
-浏览https://www.drupal.org/project/project_theme，通过过滤调焦内核8.x版本，点击搜索。在搜索结果列表里，查找那些第一位起始主题的主题。一些大范围安装的主题有Zen, Omega, Adaptive, Basic, Bootstrap, and NineSixty。对于这个项目我们将使用Basic主题，因为他提供了一套友好的设置和容易理解的结构。下载Basic主题并浏览README.txt文件里的说明，包括重命名主题为acme_co，这个我们将要创建网站的一个虚拟咨询公司的名称。同时在网站名称里填写 ACME，在网站信息页（管理➤配置➤网站信息）。
+浏览 https://www.drupal.org/project/project_theme ，通过过滤调焦内核8.x版本，点击搜索。在搜索结果列表里，查找那些第一位起始主题的主题。一些大范围安装的主题有Zen, Omega, Adaptive, Basic, Bootstrap, and NineSixty。对于这个项目我们将使用Basic主题，因为他提供了一套友好的设置和容易理解的结构。下载Basic主题并浏览README.txt文件里的说明，包括重命名主题为acme_co，这个我们将要创建网站的一个虚拟咨询公司的名称。同时在网站名称里填写 ACME，在网站信息页（管理➤配置➤网站信息）。
 
 下一步是按照这个主题并设置为网站的默认主题（选择 管理➤外观 在未安装主题区域里，点击“安装并设置为默认主题”）。在设置新主题为默认主题并更改默认网站标志为ACME公司标志（在外观页面，点击设置连接找到文件来上传一个新的标志），我在主题的概要里的样式表单（style.css）的一些元素进行了快速的变更设置，重新加载主页，浏览企业完整的开始页面（如图 20-1所示）。
 
@@ -120,17 +120,17 @@ featured_3: 'Featured Third'
 
 3.在css/style.css样式表单中创建CSS渲染这些区域为33%的页面宽度，设置每个区域为浮动相邻。
 
-#featured-content-area {
-border-top: #676767 2px solid;
-padding-top: 20px;
-}
-#featured-content-area-1,
-#featured-content-area-2,
-#featured-content-area-3 {
-width: 33%;
-float: left;
-padding: 10px;
-}
+    #featured-content-area {
+    border-top: #676767 2px solid;
+    padding-top: 20px;
+    }
+    #featured-content-area-1,
+    #featured-content-area-2,
+    #featured-content-area-3 {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    }
 
 随着主题的这些改变到位，我们准备好开始打基础，并建设网站。
 

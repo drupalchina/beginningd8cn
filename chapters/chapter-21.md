@@ -20,7 +20,7 @@ Drupal Commons提供了所有以上功能，并且是作为它的基础功能的
 
 ## Drupal Commons的安装 ##
    
- 建立一个社区网站的第一步就是 Drupal Commons 的安装。你可以从www.drupal.org/project/commons中下载Drupal Commons。像前面安装Drupal一样，你需要在你的网站服务器的合适位置上解压下载下来的“tar”或者“zip”文件（确定服务器上的网站平台存放路径）。
+ 建立一个社区网站的第一步就是 Drupal Commons 的安装。你可以从 www.drupal.org/project/commons 中下载Drupal Commons。像前面安装Drupal一样，你需要在你的网站服务器的合适位置上解压下载下来的“tar”或者“zip”文件（确定服务器上的网站平台存放路径）。
     
 解压上述文件，你的根目录里就会有一个名为 commons-8.x-3.12的文件夹。 你需要将所有文件上移一个层级以避免必须输入example.com/commons-8.x-3.12访问你的网站。在Linux或者OS X系统中，你可以通过导航将文件移动到commons-8.x-3.12目录（注意你的目录名称将取决于你下载的版本的不同而有所不同），使用以下命令：
 
