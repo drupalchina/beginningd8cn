@@ -11,7 +11,7 @@
 在安装Drupal前，你在即将安装Drupal的平台上需要有操作系统的权限。这个平台，不管是笔记本、台式机还是服务器，必须安装并配置几种软件用来支持运行Drupal需要的基本元素（MySQL、PHP、Apache和IIS）。操作系统和硬件的类型可依你的喜好进行选择，你可以在Windows、OS X，或基于Linux的平台上安装和配置Drupal，硬件可以是本地机（台式机、笔记本或有物理访问路径的服务器）或托管的服务器（由一个组织管理的分享或专用的服务器）。
 
 在你开始安装Drupal之前，需要在平台上下载、配置及运行一下组件：  
-* Web服务器：Apache，Nginx，Lighttpd，或微软的IIS服务器。在本书中，我用的是Apache，因为Apache在所有支持Drupal的平台上都能运行。有关安装和配置IIS的信息，请访问www.microsoft.com  
+* Web服务器：Apache，Nginx，Lighttpd，或微软的IIS服务器。在本书中，我用的是Apache，因为Apache在所有支持Drupal的平台上都能运行。有关安装和配置IIS的信息，请访问 www.microsoft.com  
 * PHP：Drupal使用的编程语言  
 * 关联的数据库服务器：MySQL或PostgreSQL都可以。为了简化安装过程，我选择了MySQL。有关PostgreSQL的安装和配置信息，请访问 www.postgresql.org  
 * FTP（文件传输协议）：用于上传文件到服务器  
@@ -23,7 +23,7 @@
 
 在安装Drupal之前，有三个基本组件要准备好：平台（硬件和操作系统）、Web服务器（软件，如Apache）、数据库（如MySQL）。如果你在一个商业托管公司的平台上，可以跳过“Drupal安装”这一部分，因为你需要的都是默认安装好的。
 
-根据你平台上操作系统的不同，可能有些组件已经安装好了（如OS X已经安装了PHP和Apache）。然而，让所有组件一起工作对大多数人来说都是一个难点。有一群很有才华的人在www.apachefriends.org上创建了一个叫XAMPP的集成（all-in-one）软件包（XAMPP表示Apache，MySQL，PHP，Python），他的安装和配置对于最初级的技术人员来说都是很简单的。在Windows，OS X操作系统，Linux和Solaris上都可以安装XAMPP。
+根据你平台上操作系统的不同，可能有些组件已经安装好了（如OS X已经安装了PHP和Apache）。然而，让所有组件一起工作对大多数人来说都是一个难点。有一群很有才华的人在 www.apachefriends.org 上创建了一个叫XAMPP的集成（all-in-one）软件包（XAMPP表示Apache，MySQL，PHP，Python），他的安装和配置对于最初级的技术人员来说都是很简单的。在Windows，OS X操作系统，Linux和Solaris上都可以安装XAMPP。
 
 在XAMPP中包含的Drupal重要组件有：  
 * Apache：处理请求的网络服务器软件包，有人发送请求时将服务器上的内容返回给申请人  
