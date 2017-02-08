@@ -13,7 +13,7 @@
 在你开始安装Drupal之前，需要在平台上下载、配置及运行一下组件：  
 * Web服务器：Apache，Nginx，Lighttpd，或微软的IIS服务器。在本书中，我用的是Apache，因为Apache在所有支持Drupal的平台上都能运行。有关安装和配置IIS的信息，请访问www.microsoft.com  
 * PHP：Drupal使用的编程语言  
-* 关联的数据库服务器：MySQL或PostgreSQL都可以。为了简化安装过程，我选择了MySQL。有关PostgreSQL的安装和配置信息，请访问www.postgresql.org  
+* 关联的数据库服务器：MySQL或PostgreSQL都可以。为了简化安装过程，我选择了MySQL。有关PostgreSQL的安装和配置信息，请访问 www.postgresql.org  
 * FTP（文件传输协议）：用于上传文件到服务器  
 * 各种类库：用于图像处理、安全连接和邮件路由
 
@@ -31,13 +31,13 @@
 * PHP&PEAR：PHP，创建和维护Drupal的开发者使用的编程语言；PEAR（PHP扩展和应用程序库），PHP开发者使用的开源代码的一个结构化的库  
 * PHPMyAdmin：一个很好的工具，可用于创建和管理数据库、表及存储在Drupal数据库中的数据
 
-在 www.apachefriends.org上有在各个平台上安装XAMPP的详细说明。有一些东西可以替代XAMPP，如OS X的MAMP，要查找替代列表可在Goole中搜索“Apache AND MySQL AND PHP stacks”。
+在 www.apachefriends.org 上有在各个平台上安装XAMPP的详细说明。有一些东西可以替代XAMPP，如OS X的MAMP，要查找替代列表可在Goole中搜索“Apache AND MySQL AND PHP stacks”。
 
 ##安装Drupal
 
 现在基本的组件已经安装完成，准备安装Drupal了。在服务器上安装Drupal有八个基本步骤，不管你是在Windows、OS　Ｘ操作系统、Linux还是共享主机的服务器上运行Drupal，这都是必须的。
 
-1. 从http://drupal.org/project/drupal下载当前的drupal8安装包到你电脑上  
+1. 从 http://drupal.org/project/drupal 下载当前的drupal8安装包到你电脑上  
 2. 解压缩Drupal的安装包tar.gz或zip文件  
 3. 将解压缩的文件移动到你网络服务器的根目录下，如果你想在服务器上运行多个网站就移动到根目录的子目录下（如www-root/drupal8或htdocs/drupal8）
 4. 创建settings.php文件
@@ -49,7 +49,7 @@
 
 ###下载Drupal
 
-下载Drupal很简单，访问www.drupal.org/project/drupal选择最新的版本和语言（如英语或法语）的Drupal，从主页上下载下来。Drupal版本号是随时间变化的，但是主页上的列出的最新版本是安全的，可以放心的下载、安装及配置。另外，通过Drush下载Drupal会更简单，详见第15章。
+下载Drupal很简单，访问 www.drupal.org/project/drupal 选择最新的版本和语言（如英语或法语）的Drupal，从主页上下载下来。Drupal版本号是随时间变化的，但是主页上的列出的最新版本是安全的，可以放心的下载、安装及配置。另外，通过Drush下载Drupal会更简单，详见第15章。
 
 要下载Drupal，右击你想要下载的版本及格式即可，压缩文件（tar.gz或zip）会自动下载到你配置好的接收文件夹中。
 
@@ -79,7 +79,7 @@ Drupal将所有上传的文件和目录存储在服务器的一个目录上，�
 
 ###创建Drupal数据库
 
-创建数据库是一个相对简单的过程。如果你在使用XAMPP或网络托管服务器，你可以使用phpMyAdmin管理工具，要使用你笔记本或台式机的管理工具，访问链接http://localhost/xampp(如果你使用XAMPP的话）或者是你已安装的有适当面板的链接，在工具条上你会看到phpMyAdmin，点击链接打开phpMyAdmin管理页面。
+创建数据库是一个相对简单的过程。如果你在使用XAMPP或网络托管服务器，你可以使用phpMyAdmin管理工具，要使用你笔记本或台式机的管理工具，访问链接 http://localhost/xampp (如果你使用XAMPP的话）或者是你已安装的有适当面板的链接，在工具条上你会看到phpMyAdmin，点击链接打开phpMyAdmin管理页面。
 
 在这个页面上，定位在“创建数据库”标签的右下方的文本框中，输入一个简易且和网站相关的名字（用这种方法便于以后确定哪个数据库是与哪个网站相关的，尤其是当你的服务器上运行多个网站的时候）。MySQL是非常灵活的，你可以给你的数据库定义任何你想要的名称，但是，它还是有一些你要遵循的标准的，标准如下：  
 * 只使用小写字符  

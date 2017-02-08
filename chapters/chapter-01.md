@@ -23,7 +23,7 @@
 - 在线表单
 - 电子商务功能
  
-现在有数以百计的CMSes可用（查看www.cmsmatrix.org）。它们的范围从简单的博客为中心的平台，如WordPress，到复杂的企业级内容管理解决方案，如Drupal的。
+现在有数以百计的CMSes可用（查看 www.cmsmatrix.org ）。它们的范围从简单的博客为中心的平台，如WordPress，到复杂的企业级内容管理解决方案，如Drupal的。
 
 ## Drupal核心 ##
 
@@ -54,7 +54,7 @@ Drupal核心还包括一个功能丰富的搜索引擎，多语言功能，以�
 
 ## 贡献模块 ##
 
-虽然Drupal核心可以用来构建功能丰富的网站，也有可能，核心功能不能满足特定的需求。在这种情况下，第一个步骤是通过搜索成千上万的自定义模块，来自世界各地的贡献的开发者Drupal的模块，来解决你的需求。这很可能也是其他人早有同样的功能要求，并已有开发扩展Drupal核心功能的的解决方案来提供给你。为了找到一个贡献模块，请访问www.drupal.org/project/project_module的Drupal官方网站。
+虽然Drupal核心可以用来构建功能丰富的网站，也有可能，核心功能不能满足特定的需求。在这种情况下，第一个步骤是通过搜索成千上万的自定义模块，来自世界各地的贡献的开发者Drupal的模块，来解决你的需求。这很可能也是其他人早有同样的功能要求，并已有开发扩展Drupal核心功能的的解决方案来提供给你。为了找到一个贡献模块，请访问 www.drupal.org/project/project_module 的Drupal官方网站。
 
 你会发现一些分类列表和当前类贡献模块的数量（用于所有版本
 Drupal的）。此处是分类类型和模块的数量的简单例子（每时每刻都有模块被添加，所以模块的数量是截至写这个例子时的数目）：
@@ -96,7 +96,7 @@ Drupal的）。此处是分类类型和模块的数量的简单例子（每时�
 - 和正文）。
 - 图形元素，例如站标。
 
-Drupal核心包含了许多可以使用在你的新网站的现成的主题。您还可以可在www.drupal.org/project/project_theme免费下载一个或多个主题，或者按照www.drupal.org/documentation/theme的说明创建自己的主题。
+Drupal核心包含了许多可以使用在你的新网站的现成的主题。您还可以可在 www.drupal.org/project/project_theme 免费下载一个或多个主题，或者按照 www.drupal.org/documentation/theme 的说明创建自己的主题。
 
 ## 创建内容 ##
 
