@@ -11,9 +11,9 @@
 在安装Drupal前，你在即将安装Drupal的平台上需要有操作系统的权限。这个平台，不管是笔记本、台式机还是服务器，必须安装并配置几种软件用来支持运行Drupal需要的基本元素（MySQL、PHP、Apache和IIS）。操作系统和硬件的类型可依你的喜好进行选择，你可以在Windows、OS X，或基于Linux的平台上安装和配置Drupal，硬件可以是本地机（台式机、笔记本或有物理访问路径的服务器）或托管的服务器（由一个组织管理的分享或专用的服务器）。
 
 在你开始安装Drupal之前，需要在平台上下载、配置及运行一下组件：  
-* Web服务器：Apache，Nginx，Lighttpd，或微软的IIS服务器。在本书中，我用的是Apache，因为Apache在所有支持Drupal的平台上都能运行。有关安装和配置IIS的信息，请访问www.microsoft.com  
+* Web服务器：Apache，Nginx，Lighttpd，或微软的IIS服务器。在本书中，我用的是Apache，因为Apache在所有支持Drupal的平台上都能运行。有关安装和配置IIS的信息，请访问 www.microsoft.com  
 * PHP：Drupal使用的编程语言  
-* 关联的数据库服务器：MySQL或PostgreSQL都可以。为了简化安装过程，我选择了MySQL。有关PostgreSQL的安装和配置信息，请访问www.postgresql.org  
+* 关联的数据库服务器：MySQL或PostgreSQL都可以。为了简化安装过程，我选择了MySQL。有关PostgreSQL的安装和配置信息，请访问 www.postgresql.org  
 * FTP（文件传输协议）：用于上传文件到服务器  
 * 各种类库：用于图像处理、安全连接和邮件路由
 
@@ -23,7 +23,7 @@
 
 在安装Drupal之前，有三个基本组件要准备好：平台（硬件和操作系统）、Web服务器（软件，如Apache）、数据库（如MySQL）。如果你在一个商业托管公司的平台上，可以跳过“Drupal安装”这一部分，因为你需要的都是默认安装好的。
 
-根据你平台上操作系统的不同，可能有些组件已经安装好了（如OS X已经安装了PHP和Apache）。然而，让所有组件一起工作对大多数人来说都是一个难点。有一群很有才华的人在www.apachefriends.org上创建了一个叫XAMPP的集成（all-in-one）软件包（XAMPP表示Apache，MySQL，PHP，Python），他的安装和配置对于最初级的技术人员来说都是很简单的。在Windows，OS X操作系统，Linux和Solaris上都可以安装XAMPP。
+根据你平台上操作系统的不同，可能有些组件已经安装好了（如OS X已经安装了PHP和Apache）。然而，让所有组件一起工作对大多数人来说都是一个难点。有一群很有才华的人在 www.apachefriends.org 上创建了一个叫XAMPP的集成（all-in-one）软件包（XAMPP表示Apache，MySQL，PHP，Python），他的安装和配置对于最初级的技术人员来说都是很简单的。在Windows，OS X操作系统，Linux和Solaris上都可以安装XAMPP。
 
 在XAMPP中包含的Drupal重要组件有：  
 * Apache：处理请求的网络服务器软件包，有人发送请求时将服务器上的内容返回给申请人  
@@ -31,13 +31,13 @@
 * PHP&PEAR：PHP，创建和维护Drupal的开发者使用的编程语言；PEAR（PHP扩展和应用程序库），PHP开发者使用的开源代码的一个结构化的库  
 * PHPMyAdmin：一个很好的工具，可用于创建和管理数据库、表及存储在Drupal数据库中的数据
 
-在 www.apachefriends.org上有在各个平台上安装XAMPP的详细说明。有一些东西可以替代XAMPP，如OS X的MAMP，要查找替代列表可在Goole中搜索“Apache AND MySQL AND PHP stacks”。
+在 www.apachefriends.org 上有在各个平台上安装XAMPP的详细说明。有一些东西可以替代XAMPP，如OS X的MAMP，要查找替代列表可在Goole中搜索“Apache AND MySQL AND PHP stacks”。
 
 ##安装Drupal
 
 现在基本的组件已经安装完成，准备安装Drupal了。在服务器上安装Drupal有八个基本步骤，不管你是在Windows、OS　Ｘ操作系统、Linux还是共享主机的服务器上运行Drupal，这都是必须的。
 
-1. 从http://drupal.org/project/drupal下载当前的drupal8安装包到你电脑上  
+1. 从 http://drupal.org/project/drupal 下载当前的drupal8安装包到你电脑上  
 2. 解压缩Drupal的安装包tar.gz或zip文件  
 3. 将解压缩的文件移动到你网络服务器的根目录下，如果你想在服务器上运行多个网站就移动到根目录的子目录下（如www-root/drupal8或htdocs/drupal8）
 4. 创建settings.php文件
@@ -49,7 +49,7 @@
 
 ###下载Drupal
 
-下载Drupal很简单，访问www.drupal.org/project/drupal选择最新的版本和语言（如英语或法语）的Drupal，从主页上下载下来。Drupal版本号是随时间变化的，但是主页上的列出的最新版本是安全的，可以放心的下载、安装及配置。另外，通过Drush下载Drupal会更简单，详见第15章。
+下载Drupal很简单，访问 www.drupal.org/project/drupal 选择最新的版本和语言（如英语或法语）的Drupal，从主页上下载下来。Drupal版本号是随时间变化的，但是主页上的列出的最新版本是安全的，可以放心的下载、安装及配置。另外，通过Drush下载Drupal会更简单，详见第15章。
 
 要下载Drupal，右击你想要下载的版本及格式即可，压缩文件（tar.gz或zip）会自动下载到你配置好的接收文件夹中。
 
@@ -79,7 +79,7 @@ Drupal将所有上传的文件和目录存储在服务器的一个目录上，�
 
 ###创建Drupal数据库
 
-创建数据库是一个相对简单的过程。如果你在使用XAMPP或网络托管服务器，你可以使用phpMyAdmin管理工具，要使用你笔记本或台式机的管理工具，访问链接http://localhost/xampp(如果你使用XAMPP的话）或者是你已安装的有适当面板的链接，在工具条上你会看到phpMyAdmin，点击链接打开phpMyAdmin管理页面。
+创建数据库是一个相对简单的过程。如果你在使用XAMPP或网络托管服务器，你可以使用phpMyAdmin管理工具，要使用你笔记本或台式机的管理工具，访问链接 http://localhost/xampp (如果你使用XAMPP的话）或者是你已安装的有适当面板的链接，在工具条上你会看到phpMyAdmin，点击链接打开phpMyAdmin管理页面。
 
 在这个页面上，定位在“创建数据库”标签的右下方的文本框中，输入一个简易且和网站相关的名字（用这种方法便于以后确定哪个数据库是与哪个网站相关的，尤其是当你的服务器上运行多个网站的时候）。MySQL是非常灵活的，你可以给你的数据库定义任何你想要的名称，但是，它还是有一些你要遵循的标准的，标准如下：  
 * 只使用小写字符  

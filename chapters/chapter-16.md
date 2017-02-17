@@ -62,24 +62,20 @@ nothing to commit, working directory clean
 
 进行到这里，我们已经完成文件提交，并且获得了将文件恢复到刚刚提交时的状态的能力。接下来要进行的是对文件进行一些变更，并提交这些变更。让我们对已有的文件做一些修改，并且添加一个新文件，来看看 Git 对这两种情况是如何作出响应的。首先，在你的 sites/default/files 目录下创建一个文档。 为了演示，我们新建一个名为 test.txt 的文件，里面包含几行信息，这样我们就能看到 Git 在运转。文件创建完成之后，执行`git status`来验证 Git 已经检测到这个新文件。你应该会看到类似的输出：
 
-```
-# On branch master
-# Untracked files:
-# (use "git add <file>..." to include in what will be committed)
-#
-# test.txt
-```
+    # On branch master
+    # Untracked files:
+    # (use "git add <file>..." to include in what will be committed)
+    #
+    # test.txt
 
 那么让我们按照提示信息，使用`git add test.txt` 来将文件添加到 Git. 添加文件后，使用`git status`来看看文件是否已经被添加了。你应该会看到类似的输出：
 
-```
-# On branch master
-# Changes to be committed:
-# (use "git reset HEAD <file>..." to unstage)
-#
-# new file: test.txt
-#
-```
+    # On branch master
+    # Changes to be committed:
+    # (use "git reset HEAD <file>..." to unstage)
+    #
+    # new file: test.txt
+    #
 
 其中，文件名前面的“new file：”表明 Git 目前在跟踪该文件。
 
@@ -94,32 +90,27 @@ git commit –m "committing the initial version of test.txt to the repository"
 
 现在让我们对 test.txt 进行一下修改。添加更多的信息到 test.txt 文件当中，看看 Git 能否察觉到这个文件中的变更。 添加完文本之后，执行`git status`。你应该会看到类似的消息：
 
-```
-# On branch master 
-# Changes not staged for commit:
-# (use "git add <file>..." to update what will be committed)
-# (use "git checkout -- <file>..." to discard changes in working directory)
-#
-# modified: test.txt
-#
-```
+    # On branch master 
+    # Changes not staged for commit:
+    # (use "git add <file>..." to update what will be committed)
+    # (use "git checkout -- <file>..." to discard changes in working directory)
+    #
+    # modified: test.txt
+    #
 
 Git 识别到了 test.txt 的变更。现在，我们可以使用`git add test.txt`和`git commit -m "modified test.txt"` 将修改版的 text.txt 添加到 Git 并提交。提交完成之后，使用`git log`命令来查看你的仓库的提交历史。你应该会看到两条跟下面内容相似的与你提交的文件有关的提交记录。
 
-```
-commit d4c24ca1854e53676178141be86246b1a3cb0a1a
-Author: Todd Tomlinson <todd@radiantmediasolutions.com>
-Date: Wed Mar 19 08:27:10 2014 -0700
+    commit d4c24ca1854e53676178141be86246b1a3cb0a1a
+    Author: Todd Tomlinson <todd@radiantmediasolutions.com>
+    Date: Wed Mar 19 08:27:10 2014 -0700
+    
+    modified test.txt
 
-modified test.txt
+    commit 39b5859fa70d1aafacd5c04d7695e715fdfd6bd6
+    Author: Todd Tomlinson <todd@radiantmediasolutions.com>
+    Date: Wed Mar 19 08:23:04 2014 -0700
 
-commit 39b5859fa70d1aafacd5c04d7695e715fdfd6bd6
-Author: Todd Tomlinson <todd@radiantmediasolutions.com>
-Date: Wed Mar 19 08:23:04 2014 -0700
-
-committing the initial version of test.txt to the repository
-
-```
+    committing the initial version of test.txt to the repository
 
 在上面的列表中，你可以看到两个不同的提交ID(commit ID)。如果你需要将 test.txt 恢复到初始状态，你可以使用那个初始的 commit ID 来进行操作。回滚到以前状态的命令是`git revert <commit id>`。为了撤销我对 test.txt 的变更，我会使用第一个 commit ID，那个以“bd6”结尾的 ID。
 

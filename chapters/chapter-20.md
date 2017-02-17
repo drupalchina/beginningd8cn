@@ -82,7 +82,7 @@
 
 为我们的企业网站项目，我们将主要放在第二个选择上，使用一个起始主题。一个起始主题提供了创建主题的基础，它表达了一个网站特定的设计需求。从设计的角度来看，一个起始的主题是相当鲜明的，这是重点放在起始主题基础上的目的性，而不是视觉设计。
 
-浏览https://www.drupal.org/project/project_theme，通过过滤调焦内核8.x版本，点击搜索。在搜索结果列表里，查找那些第一位起始主题的主题。一些大范围安装的主题有Zen, Omega, Adaptive, Basic, Bootstrap, and NineSixty。对于这个项目我们将使用Basic主题，因为他提供了一套友好的设置和容易理解的结构。下载Basic主题并浏览README.txt文件里的说明，包括重命名主题为acme_co，这个我们将要创建网站的一个虚拟咨询公司的名称。同时在网站名称里填写 ACME，在网站信息页（管理➤配置➤网站信息）。
+浏览 https://www.drupal.org/project/project_theme ，通过过滤调焦内核8.x版本，点击搜索。在搜索结果列表里，查找那些第一位起始主题的主题。一些大范围安装的主题有Zen, Omega, Adaptive, Basic, Bootstrap, and NineSixty。对于这个项目我们将使用Basic主题，因为他提供了一套友好的设置和容易理解的结构。下载Basic主题并浏览README.txt文件里的说明，包括重命名主题为acme_co，这个我们将要创建网站的一个虚拟咨询公司的名称。同时在网站名称里填写 ACME，在网站信息页（管理➤配置➤网站信息）。
 
 下一步是按照这个主题并设置为网站的默认主题（选择 管理➤外观 在未安装主题区域里，点击“安装并设置为默认主题”）。在设置新主题为默认主题并更改默认网站标志为ACME公司标志（在外观页面，点击设置连接找到文件来上传一个新的标志），我在主题的概要里的样式表单（style.css）的一些元素进行了快速的变更设置，重新加载主页，浏览企业完整的开始页面（如图 20-1所示）。
 
@@ -120,17 +120,17 @@ featured_3: 'Featured Third'
 
 3.在css/style.css样式表单中创建CSS渲染这些区域为33%的页面宽度，设置每个区域为浮动相邻。
 
-#featured-content-area {
-border-top: #676767 2px solid;
-padding-top: 20px;
-}
-#featured-content-area-1,
-#featured-content-area-2,
-#featured-content-area-3 {
-width: 33%;
-float: left;
-padding: 10px;
-}
+    #featured-content-area {
+    border-top: #676767 2px solid;
+    padding-top: 20px;
+    }
+    #featured-content-area-1,
+    #featured-content-area-2,
+    #featured-content-area-3 {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    }
 
 随着主题的这些改变到位，我们准备好开始打基础，并建设网站。
 
@@ -212,7 +212,7 @@ padding: 10px;
 我们早些时候再本章明确的一个功能需求是去收集新闻文章从外部网站并聚合这些文章到公司网站。聚合模块是Drupal核心模块且是一个伟大的解决方法。默认情况下聚合模块是关闭的可以浏览扩展页面开启功能。点击扩展链接在二级菜单并见聚合模块前的选择框选中。点击保存配置按钮来开启聚合模块。
 
 下一步是去定义从哪个元来推送信息。在配置页面，找到并点击“源聚合”链接（Web服务项内）。在“源聚合”页面，点击“添加源”按钮来设定一个新闻源。作为演示目的，我们选择“Reuters Business
-News RSS feed”作为我们新闻源的来源，在标题字段输入“Latest Business News”并拷贝和粘贴URL(http://feeds.reuters.com/reuters/businessNews)到URL地址栏.保留更新间隔为1小时，这是Drupal从Reuters网站查询新的新闻文章的频率。在保存新闻源后，运行cron来从Reuters网站推送新闻（配置➤Cron）。在运行cron后，回到源聚合配置页面并点击源的标题来浏览最新的新闻（见图20-8）.
+News RSS feed”作为我们新闻源的来源，在标题字段输入“Latest Business News”并拷贝和粘贴URL( http://feeds.reuters.com/reuters/businessNews )到URL地址栏.保留更新间隔为1小时，这是Drupal从Reuters网站查询新的新闻文章的频率。在保存新闻源后，运行cron来从Reuters网站推送新闻（配置➤Cron）。在运行cron后，回到源聚合配置页面并点击源的标题来浏览最新的新闻（见图20-8）.
 
 ![图20-8  来自Reuters的最新新闻](../images/pic-20-8.png)
 

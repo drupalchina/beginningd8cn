@@ -39,8 +39,8 @@
 
 正如你从这些例子中看到的那样，有数以千计跨越多种类别的模块。这里所列的类别的常规标题不利于展现隐藏其后的可用模块的丰富功能。通过扫描数百个模块来找到你需要的那个模块往往需要研究和耐心。复杂的要求，可能还需要多个模块一起来解决一个更大的问题。了解哪些模块做什么，哪些模块配合起来使用很好，哪些模块不能一起使用等常常是构建一个复杂的Drupal网站最大的挑战。 
 
-这里给出的一个建议是访问www.drupal.org/project/project_module ，在“排序方式（Sort by）”一栏中选择“最新发布（Last release）”排序选项，然后单击搜索（Search）按钮。出现的列表将显示最新的已经向社会发布的模块和模块更新。每隔一两天访问一次该网站，并通读网站上最新添加的或更新的模块的说明。每天只需要几分钟的时间，你就能快速了解那些模块以及通过 Drupal 提供的模块实现的方案的类型。
-第三方网站http://drupalmodules.com ，能很好地帮助我们找到合适的模块。该网站提供了模块查找功能，使得为特定工作找到合适的模块变得更容易。
+这里给出的一个建议是访问 www.drupal.org/project/project_module ，在“排序方式（Sort by）”一栏中选择“最新发布（Last release）”排序选项，然后单击搜索（Search）按钮。出现的列表将显示最新的已经向社会发布的模块和模块更新。每隔一两天访问一次该网站，并通读网站上最新添加的或更新的模块的说明。每天只需要几分钟的时间，你就能快速了解那些模块以及通过 Drupal 提供的模块实现的方案的类型。
+第三方网站 http://drupalmodules.com ，能很好地帮助我们找到合适的模块。该网站提供了模块查找功能，使得为特定工作找到合适的模块变得更容易。
 ##下载并安装一个模块##
 
 为你的站点安装一个新的模块有三个基本途径：下载模块文件到你的服务器、使用模块管理界面上的“安装新的模块（Install new module）”功能或使用Drush。我将在本章介绍前两种方法，并在第15章介绍如何使用Drush。
@@ -49,7 +49,7 @@
 ####下载模块文件到您的服务器####
 我将通过下载模块文件到我的 Drupal 8 网站的模块目录来演示如何安装 Google Analytics module 。步骤如下：
  
-1. 访问 Drupal.org/project/modules 找到该模块。您可以使用搜索功能或模块页面上的过滤器来查找一个模块，但是要知道Drupal.org对模块的网址（URL）的标准命名法是以模块的名称作为URL的最后元素。快速搜索谷歌分析模块：访问 www.drupal.org/project/google_analytics。
+1. 访问 Drupal.org/project/modules 找到该模块。您可以使用搜索功能或模块页面上的过滤器来查找一个模块，但是要知道Drupal.org对模块的网址（URL）的标准命名法是以模块的名称作为URL的最后元素。快速搜索谷歌分析模块：访问 www.drupal.org/project/google_analytics 。
  
 2. 向下滚动到该模块的下载部分。在大多数情况下，你应该选中要安装模块的最新版本。最新版本以绿色背景高亮显示。在某些情况下，你可能需要使用一个仍处于开发阶段的模块，如果一个稳定的版本尚未公布。开发版本通常以红色背景高亮显示，并且具有以-dev结尾的版本号。您应该谨慎使用预（DEV）版本的模块，因为这些模块都尚未完全开发，并没有被彻底地测试。要下载一个模块，右键单击 tar.gz 链接（下载 Drupal8 的版本），然后单击你的浏览器提供的弹出菜单中的保存（Save）选项。如果你的 Drupal 8 安装在本地计算机上，你可以在你的安装 Drupal 的模块目录中直接保存tar.gz文件。如果你的Drupal没有安装在本地计算机上，使用 FTP 将文件复制到模块目录服务器上。模块目录位于在你建立的网站根目录Drupal 8 中。
  
@@ -76,7 +76,7 @@
 图11-2 该模块安装页面
 
 
-2. 在安装模块的页面上，也提供了模块的安装文件的URL（来自Drupal.org），或在您下载该模块到您的计算机的情况下，使用“上传一个模块或主题（Upload a module or theme）”功能来从你的电脑把该文件上传到服务器。为了简化这个过程，我们将使用第一个文本框来指定我们将要安装的 Display Suite module 的URL。要找到 Display Suite module 的网址，请访问       www.drupal.org/project/ project_module ，在“Core compatibility” 选择列表中选择“8.x”，并在搜索模块文本框（Search Modules）中输入“Display Suite”。单击搜索（Search）按钮。在搜索结果中，向下滚动，直到你在列表中看到  Display Suite module ，点击标题将显示该模块的主页。你应该是www.drupal.org/project/ds的页面，其中ds是模块开发人员使用的 Display Suite 的缩写。
+2. 在安装模块的页面上，也提供了模块的安装文件的URL（来自Drupal.org），或在您下载该模块到您的计算机的情况下，使用“上传一个模块或主题（Upload a module or theme）”功能来从你的电脑把该文件上传到服务器。为了简化这个过程，我们将使用第一个文本框来指定我们将要安装的 Display Suite module 的URL。要找到 Display Suite module 的网址，请访问       www.drupal.org/project/ project_module ，在“Core compatibility” 选择列表中选择“8.x”，并在搜索模块文本框（Search Modules）中输入“Display Suite”。单击搜索（Search）按钮。在搜索结果中，向下滚动，直到你在列表中看到  Display Suite module ，点击标题将显示该模块的主页。你应该是 www.drupal.org/project/ds 的页面，其中ds是模块开发人员使用的 Display Suite 的缩写。
  
 3. 向下滚动到Display Suite 主页的下载部分，在那里你会找到模块的当前版本的列表（见图11-3）。在我们的例子中，我们想要该模块的Drupal 8版本，所以找到可用版本列表中该模块的8.x版本。
 
@@ -194,7 +194,7 @@ Display Suite 给你一个拖和拖放界面，这允许你完全控制你的内
  
 Drupal 现成的菜单功能提供一种易于使用的创建水平和垂直菜单的机制，这些菜单被限制为单一层次。在很多情况下，你会希望具备创建下拉菜单（适用于水平菜单）或滑动菜单（适用于垂直菜单）的能力。 Drupal的菜单系统提供了以分层方式分配菜单项的能力;但是，它需要我们 Drupal 开发者格式化菜单，才能保证当用户将鼠标悬停在一个菜单项时有下拉菜单或滑动菜单出现。幸运的是，我们拥有能够自动呈现下拉或滑动菜单的 Nicemenus 模块。
 ###Pathauto
-成功优化搜索引擎的关键要素之一是提供您的网站上有意义的 URL 。默认情况下， Drupal 8 现成的URL看起来像  http://localhost/node/1 。搜索引擎不知道“node/1”的意思，也也不知道与该页面相关联的内容是关于什么的，只是“看一眼”URL 。网站的访客也可能很难导航到那些未通过菜单链接或访问的页面，例如 http://localhost/node/2487，就不是很直观。幸运的是，我们有 Pathauto 模块，它可以为正在创建的结点创建一个“别名URL”。网址别名采用节点名字的形式，同时带有用来分隔单词的连字符，并且所有的字都换成小写。以 http://localhost/node/2487为例，如果该节点的标题为“Special deals of the month”，由Pathauto产生的 URL 应该是： http://localhost/specialdeals-month （ Pathauto 生成URL时，会除去像“the”和“of”这样的常用词）。别名网址将成为呈现页面时 Drupal 使用的主要路径，是相比于 http://localhost/node/2487 对用户和搜索引擎更友好的版本。
+成功优化搜索引擎的关键要素之一是提供您的网站上有意义的 URL 。默认情况下， Drupal 8 现成的URL看起来像  http://localhost/node/1 。搜索引擎不知道“node/1”的意思，也也不知道与该页面相关联的内容是关于什么的，只是“看一眼”URL 。网站的访客也可能很难导航到那些未通过菜单链接或访问的页面，例如 http://localhost/node/2487 ，就不是很直观。幸运的是，我们有 Pathauto 模块，它可以为正在创建的结点创建一个“别名URL”。网址别名采用节点名字的形式，同时带有用来分隔单词的连字符，并且所有的字都换成小写。以 http://localhost/node/2487 为例，如果该节点的标题为“Special deals of the month”，由Pathauto产生的 URL 应该是： http://localhost/specialdeals-month （ Pathauto 生成URL时，会除去像“the”和“of”这样的常用词）。别名网址将成为呈现页面时 Drupal 使用的主要路径，是相比于 http://localhost/node/2487 对用户和搜索引擎更友好的版本。
  	
 ###Webform
 Webform 模块提供了一个简单易用的创建在线表单的界面。您可以使用在线表单来捕捉网站访问者填入表格的信息，而且几乎可以是你能想到的任何类型的信息。表格可能是求职申请表，信息申请表，甚至是一个事件登记表。你用 Webform 来创建表格时，表格的类型几乎没有任何限制。这个模块提供了一种创建和输出表单的扩展能力。那就是给预先确定的人发送电子邮件，邮件包含了某人在表单中输入信息的内容。提供了两种工具，一个是可以生成关于捕获表单信息的报告，另一个可以将输入表格的信息导入到一个  Excel 表格里。

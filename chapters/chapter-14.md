@@ -38,7 +38,7 @@
 
 Backup and Migrate 模块需要你去安装，因为它不是 Drupal 核心的一部分。你可以在 www.drupal.org/project/backup_migrate 找到模块细节。安装模块，遵循涵盖第11章的内容。
 
-要访问 Backup and Migrate 配置页面，访问 http://localhost/admin/content/backup_migrate （使用您的网站所在的真实 URL 替换 http://localhost ）。按下回车键后，您将看到 Backup and Migrate 模块的配置面板。
+要访问 Backup and Migrate 配置页面，访问( http://localhost/admin/content/backup_migrate )使用您的网站所在的真实 URL 替换 http://localhost 。按下回车键后，您将看到 Backup and Migrate 模块的配置面板。
  
 配置 Backup and Migrate 模块的第一步是定义备份文件存储在服务器上的哪个地方。点击页面的顶部的 Destinations 选项卡，显示如图14-1所示的页面。文件存储位置由两个设置决定: 一个用于手动备份,在站点管理员处点击“现在备份”链接来执行备份，另一个就是自动备份。我将稍后介绍如何设置自动备份。你也可以设置你想要备份的数据库。默认情况下，模块自动检测你的站点使用的数据库并设置参数。在安装和设置模块的过程中，你可以选择覆盖默认的目录和数据库，或者你也可以像我一样，保留默认值。
 
@@ -76,7 +76,7 @@ drush sql-dump –-result-file=<filename>
 
 ##用 Backup and Migrate 恢复
 
-如果你需要用备份和迁移这个模块创建的备份恢复系统，请返回到 Backup and Migrate 管理页面（http://localhost/admin/content/backup_migrate），并选择备份文件恢复系统。单击 Destinations 选项卡，显示存储备份的目标目录列表。参见图14-4。 
+如果你需要用备份和迁移这个模块创建的备份恢复系统，请返回到 Backup and Migrate 管理页面（ http://localhost/admin/content/backup_migrate ），并选择备份文件恢复系统。单击 Destinations 选项卡，显示存储备份的目标目录列表。参见图14-4。 
 
 ![图14-4 存储备份的目标目录列表](../images/pic-14-4.png) 
 
@@ -151,7 +151,7 @@ Drupal 提供了丰富的事件记录框架，对于管理 Drupal 站的人可�
 
 ##状况报告
 
-一般来说您的网站的“健康”报告可以从报告页面点击状态报告 （Status report） 链接进行访问。单击这个链接显示一个页面，这个页面高亮显示了 Drupal 中相对重要的设置（见图14-9）。当你运行这个报告，项目会被检查，包括是否关键配置文件是否免于未经授权的修改，是否更新数据库。 Drupal 8 的模块安装有修订办法，所以数据库不可能过时。如果出现数据库被报告为过时，运行http://localhost/core/update.php脚本，数据库与模块的当前状态同步（通过您的站点所在的实际URL替换http://localhost ）。
+一般来说您的网站的“健康”报告可以从报告页面点击状态报告 （Status report） 链接进行访问。单击这个链接显示一个页面，这个页面高亮显示了 Drupal 中相对重要的设置（见图14-9）。当你运行这个报告，项目会被检查，包括是否关键配置文件是否免于未经授权的修改，是否更新数据库。 Drupal 8 的模块安装有修订办法，所以数据库不可能过时。如果出现数据库被报告为过时，运行 http://localhost/core/update.php 脚本，数据库与模块的当前状态同步（通过您的站点所在的实际URL替换 http://localhost ）。
 
 ![图14-9状况报告](../images/pic-14-9.png)
 
