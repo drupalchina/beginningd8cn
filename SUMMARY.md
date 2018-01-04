@@ -1,7 +1,8 @@
-# 目录
+# Summary
 
+* [Introduction](README.md)
 * [前言](chapters/introduction.md)
-* [第1章 Drupal的介绍](chapters/chapter-01.md)
+* [第1章 Drupal介绍](chapters/chapter-01.md)
 * [第2章 创建和管理内容](chapters/chapter-02.md)
 * [第3章 创建和管理用户](chapters/chapter-03.md)
 * [第4章 分类](chapters/chapter-04.md)
