@@ -15,12 +15,12 @@
 Drupal 社区里面汇集了很多在线指南( www.drupal.org/documentation )，你可以找到下面的指导目录。
 
 * 使用和开发者指南（User and Builder Guides）
-	* 理解Drupal（）
-	* 安装指南（）
-	* 管理和安全指南（）
-	* 结构指南（）
-	* 建站指南（）
-	* 多语言指南（）
+	* 理解Drupal（Understanding Drupal）
+	* 安装指南（Installation Guide）
+	* 管理和安全指南（Administration & Security Guide）
+	* 结构指南（Structure Guide）
+	* 建站指南（Site Building Guide）
+	* 多语言指南（Multilingual Guide）
 * 主题化指南（Theming Guide）
 * 移动指南（Mobile Guide）
 * 开发者指南（Developer Guides）
@@ -35,9 +35,6 @@ Drupal 社区里面汇集了很多在线指南( www.drupal.org/documentation )�
 * 常见问题解答（FAQs）
 * 教程（Tutorials and recipes）
 * 资源向导（Resource guides）
-
-
-
 
 ## 问题讨论区
 
