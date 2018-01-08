@@ -27,19 +27,23 @@
 
 ![图2-1。浏览您的计算机图像您要添加到您的文章](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-1.png?raw=true)
 
+图2-1 
+
 在找到并上传图片，内容创建表单应该以图像的形式显示一张缩略版图片，联通一个文本字段。它是将描述性的文本显示出来是一个好主意。
 
-![图2-2 你要上传的图片显示，你被赋予添加描述性文本的机会](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-2.png?raw=true)
+![图2-2 你要上传的图片显示，你被赋予添加描述性文本的机会](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-2.png?raw=true)图2-2
 
 下一步是创建正文和相关的标记你的文章\(见图2 - 3\)。标签可以是任何单词或简短字符串列表，有逗号分割，描述所涵盖的一般的文章。我么将在第四章详细讨论标签。
 
-![图2-3 创建文章主体文本并添加标签](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-3.png?raw=true)
+![图2-3 创建文章主体文本并添加标签](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-3.png?raw=true)图2-3 
 
 接下来，点击页面底部的“保存并发布”按钮。通过点击首页标签返回到您的网站的主页。然后你将看到已更新的主页，上面显示了您的新文章（见图2-4）。
 
 ![图2-4 已更新的主页出现](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-4.png?raw=true)
 
 正如你在图2-4中看到，，一篇文章显示已经上传的图片以及已经输入的标签的列表。我将介绍标签和第四章中详细分类,但只作为一个预习点, 点击其中的一个tags自动渲染tag为相同term的文章列表。
+
+图2-4
 
 ## 摘要和完整节点
 
@@ -51,16 +55,20 @@
 
 ![图2-5您可以通过单击编辑按钮来编辑您自己的网站内容](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-1.png?raw=true)
 
+图2-5
+
 ## 摘要和完整节点
 
 默认情况下，Drupal允许作者内容项的编辑、更新和删除内容。只有网站管理员或用户与角色,允许他们编辑、更新和删除其他作者的内容对内容进行更改。如果您没有看到编辑内容项的标题旁边,然后你不是登录一个账户与适当的权限更改项。要改变一个内容项,单击编辑选项卡。Drupal将在编辑模式下显示的内容项,在那里你可以更改或删除内容项\(见图2 - 6\)。
 
 ![图2-6 显示为编辑模式的内容](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-6.png?raw=true)
 
+图2-6
+
 还有另一种方式来编辑您的文章。尝试更新您在上一步中创建的文章导航回主页。要导航回主页，点击“返回网站”按钮位于页面的左上角。在主页上，将鼠标悬停在你想改变的文章。你会发现铅笔图标显示为你悬停标题的右侧（见图2-7）。点击铅笔图标，选择  
 “快速编辑”选项，然后单击内容主体。
 
-![图2-7 铅笔图标](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-7.png?raw=true)
+![图2-7 铅笔图标](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-7.png?raw=true)图2-7
 
 ---
 
@@ -71,7 +79,7 @@
 其它内容选项----第二章:创建和管理内容  
 将会弹出一个窗口，在该窗口中你可以不离开主页进行该文本的更新。在编辑器中更改好文本内容并单击”保存”按钮。保存以后新版自动呈现在主页。这是一种快速弥补或修复错误的了不起的办法。
 
-![图2-8 页面内容编辑](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-8.png?raw=true)
+![图2-8 页面内容编辑](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-8.png?raw=true)图2-8
 
 如果您想对编辑界面做一些修改,喜欢全屏编辑界面,点击铅笔图标\(见图2 - 7日\)并选择”编辑”选项。这是一样的内容项点击任何标题来查看内容详细信息页面\(内容项将作为一个独立的页面完整的呈现\)并选择”编辑”选项卡下面的标题内容,正如我们先前所做的一样。
 
@@ -92,13 +100,17 @@
 
 ![图2-9 输入你所做更改的描述](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-9.png?raw=true)
 
+图2-9
+
 一旦你输入你改变了什么说明，请单击“保存并继续发布”按钮。 Drupal在显示与修订标签内容（见图2-10）。
 
-![图2-10 您现在的项目包括修订标签](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-10.png?raw=true)
+![图2-10 您现在的项目包括修订标签](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-10.png?raw=true)图2-10
 
 单击修订选项卡，可到列出当前版本和以前的所有版本的页面内容项（见图2-11）。
 
 ![图2-11。所有修订项目出现在这个屏幕上](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-11.png?raw=true)
+
+图2-11
 
 您可以通过单击以前版本的日期和时间查看文章的以前发布的版本。
 
@@ -115,9 +127,13 @@
 
 ![图2-12 点击菜单设置链接，设置首选项](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-12.png?raw=true)
 
+图2-12
+
 点击“保存并继续发布”按钮,Drupal会保存您的内容项,项目现在出现在主要的导航菜单,菜单项按字母顺序排序。缺省情况下，菜单项按字母顺序排序; 你可以通过菜单管理工具更改排序顺序，我们将在第8章中讨论这种情况，我们是一个单件的内容链接到菜单项。在案件要在其中多个内容项目链接到一个菜单项，你需要创建一个登陆页面（见第7章）或视图（参见第10章）。如果您使用的是标准Bartik主题（这是默认的主题在Drupal 8），你应该看到靠近你的页面的顶部，您在“菜单中输入的值的新选项卡链接标题“字段。单击该选项卡将带您进入该内容项（见图2-13）。
 
 ![图2-13 单击新菜单选项卡看到的内容项](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-13.png?raw=true)
+
+图2-13
 
 如果你删除相关的内容项,菜单项将自动消失。
 
@@ -127,9 +143,11 @@ Drupal提供了游客的能力到你的网站对你的网站的内容发表评�
 
 ![图2-14 设置您的意见的喜好](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-14.png?raw=true)
 
+图2-14
+
 提供两种选择：打开，默认选项（见图2-15），它允许网站访问者发表评论，与此内容类型创建的内容项目。关闭，从排除游客发布的注释。有可能是在那里你不希望游客有要发表评论的能力的情况下。试试这两个选项看到的内容如何显示您网站上的差异。离开打开选项选择并点击“保存并继续发布”按钮。你会看到在添加新评论内容形式立即显示内容的下面。编辑内容，然后选择关闭选项，并点击“保存并继续发表”按钮。你会发现在如何显示您的内容项的显著变化，因为评论将不再出现。
 
-![图2-15 随着打开的默认设置，用户现在可以发布在网站上的评论](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-15.png?raw=true)
+![图2-15 随着打开的默认设置，用户现在可以发布在网站上的评论](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-15.png?raw=true)图2-15
 
 使用默认设置的开放,游客到您的网站现在可以编写和发布评论的回应你的内容项\(假设你有设置权限允许匿名用户发表评论,我将介绍在第6章\)。请尝试输入主题和注释，然后点击保存。你的评论现在应该出现在注释部分。由于内容作者（或该网站的管理员），你可以删除，编辑或回复评论点击每个注释下的链接。评论通常出现的时间顺序。作为站点管理员，你有能力指定如何注释显示：无论是在列表的顶部或第一条评论最新评论在列表的顶部贴。我将介绍如何设置默认顺序在第10章。在单个内容项打开和关闭的意见提供了对哪些项目的绝对控制权接受意见。您还可以设置是否接受在内容类型级别的意见，每一个意见内容项使用该内容类型将“继承”该设置创建的。我将设置全局参数，如接受意见，在第10章。
 
@@ -137,7 +155,7 @@ Drupal提供了游客的能力到你的网站对你的网站的内容发表评�
 
 您可能已经注意到工作时的修正功能,你所示的URL浏览器的地址栏看起来像 [http://localhost/node/1](http://localhost/node/1) ,URL中的“节点”告诉我们Drupal显示一块的内容\(节点\)和“1”代表节点的惟一ID被显示。在这种情况下,它是第一个节点,我们在系统中创建,所以ID是1。这一数字将1我们添加的每个节点增加。虽然HTTP：//本地主机/节点/ 1获取我们的内容，我们想要的网址是不是很以人为或搜索引擎友好。幸运的是，Drupal让我们重写URL的东西，是更容易理解和代表性的网页上的内容的显示。单击编辑选项卡，或将鼠标悬停在您的内容项，然后单击铅笔图标，然后选择编辑。在右边栏中，点击URL路径设置。 Drupal的让你创建一个别名，或备用网址，相同的内容项目为http：//本地主机/节点/ 1。在“网址别名”字段中输入比节点/ 1更具描述性的链接。对于例如，如果本文介绍的休闲划船，你可能会在“URL输入”休闲划船“别名“字段。请注意，您只需输入你的网站的基本URL的URL部分;例如，如果你的网站是网址是 [http://example.com](http://example.com) ，就没有必要在“网址别名”字段输入 [http://example.com](http://example.com) ，只有URL的描述部分（见图2-16）。
 
-![图2-16 更改内容的网址为更具描述](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-16.png?raw=true)
+![图2-16 更改内容的网址为更具描述](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-16.png?raw=true)图2-16
 
 > 注意：您必须使用连字符，下划线，句号或其它字符的话在你分开  
 > URL。不能在单词直接使用空格。
@@ -151,6 +169,8 @@ Drupal提供了游客的能力到你的网站对你的网站的内容发表评�
 
 ![图2-17。在此输入作者信息](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-17.png?raw=true)
 
+图2-17
+
 该页面提供有关谁创造内容的用户和日期的内容信息在撰写。您不太可能会想改变这个信息，但是你可以修改，如果你需要。
 
 ## 推荐选项
@@ -159,6 +179,8 @@ Drupal提供了游客的能力到你的网站对你的网站的内容发表评�
 内容项。点击推广链接选项看到屏幕如图最近。
 
 ![图2-18 检查出你的推荐方案](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-2-18.png?raw=true)
+
+图2-18
 
 在第一章中,我们使用了“推荐到首页”选项告诉Drupal,我们希望这篇文章出现在我们的网站的首页。如果我们取消选中此复选框，我们的文章会从前面取出页面，但仍然将可以通过我们设置在前面的步骤，或者直接通过网址在：HTTP：//本地主机/节点/ X，其中X是我们正在寻找的内容的节点ID。我将介绍对于具有内容显示在后面的章节头版当我谈到替代方法Drupal的先进功能。“粘在列表的顶部”选项提供了一种机制，用于确保总是该内容条目显示在列表的顶部。我将覆盖在第10章中详细列出了这是一个有用的功能，当你有要突出，如在您的网站上张贴的内容规则的文章内容。
 
@@ -194,7 +216,7 @@ Drupal提供了游客的能力到你的网站对你的网站的内容发表评�
 * 使用内容列表网页。
   任何方法将完成工作任务,但是使用内容列表页面内容可能是最常见的方法。查看此页面,选择管理➤内容。你会看到如图2-19所示的屏幕。
 
-![图2-19 查看内容列表网页](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-1.png?raw=true)
+![图2-19 查看内容列表网页](https://github.com/drupalchina/beginningd8cn/blob/master/images/pic-11-1.png?raw=true)图2-19
 
 在此页面，您可以通过点击标题，内容类型，作者，状态，或更新的列排序列表标题，然后单击向上和向下的三角形，按升序或降序排列。你也可以筛选结果（限制是什么示出）通过从顶部的下拉菜单中选择的状态（例如，已发表或未发表）和/或内容类型下拉菜单（如文章或基本页）。点击过滤器按钮将刷新列表只显示那些符合您选择的条件的项目。从列表中的任何项目，您可以点击文章的标题，查看这篇文章，或者您也可以点击箭头操作按钮右边露出编辑或删除选项。您也可以保存，发布，取消发布，删除，提升为头版，置顶头版，使粘和删除粘性上同时多个内容项。只需点击复选框以每个内容的左项，从“选择用”下拉菜单中选择要应用到所有的项目，你的选择勾选，然后单击应用。
 
