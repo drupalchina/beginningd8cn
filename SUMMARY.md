@@ -25,5 +25,5 @@
 * [第21章 构建社区网站](chapters/chapter-21.md)
 * [第22章 构建电子商务网站](chapters/chapter-22.md)
 * [附录A 安装 Drupal](chapters/appendix-A.md)
-* [附录 B 其他资源](chapters/appendix-B.md)
+* [附录B 其他资源](chapters/appendix-B.md)
 
