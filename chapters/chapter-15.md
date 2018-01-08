@@ -115,7 +115,7 @@ status命令返回一个有关你当前Drupal8安装信息的有用的列表，�
 
 <table style="border-collapse:collapse;"><tr><th style="width:20%;">命令</th><th style="width:80%;">描述</th></tr><tr><td>user-add-role</td><td>添加角色到指定的用户帐户</td></tr><tr><td>user-block</td><td>阻止指定的用户（S）</td></tr><tr><td>user-cancel</td><td>取消具有指定名称的用户帐户</td></tr><tr><td>user-create</td><td>创建具有指定名称的用户帐户</td></tr><tr><td>user-information</td><td>打印关于指定用户（S）的信息</td></tr><tr><td>user-login</td><td>向指定用户帐户显示一个一次性登录链接（默认为ID1）</td></tr><tr><td>user-password</td><td>为具有指定名称的用户账户设置或重置密码</td></tr><tr><td>user-remove-role</td><td>移除指定用户帐户的角色</td></tr><tr><td>user-unblock</td><td>解锁指定的用户</td></tr></table>
 
-##本章小结
+##总结
 
 Drush向那些喜欢命令行操作的用户提供了一个快速且容易的方法来管理网站。还有很多更高级的Drush功能，如编写Drush脚本同时执行多个任务。欲了解更多信息，请访问 http://drush.org 。
 
