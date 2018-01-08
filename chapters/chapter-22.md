@@ -265,7 +265,7 @@ Drupal Commerce 为收取客户费用提供了几种方法，包括：信用卡�
 
 **图22-24 配置结账流程**
 
-## 本章小结
+## 总结
  
 本章中，我介绍了安装 Drupal Commerce 以及配置店面的基本过程。还有许多额外的模块和技术用来建立和运营一个基于 Drupal Commerce 的网站。我建议你花时间在 Drupal.org 并且 查看一堆 专注于建立和运营 Drupal Commerce 店面的 Youtube 视频。
 
